@@ -108,7 +108,8 @@
 /* IP Camera 1 */
 
 .containerr div1{
-    background-image: url("/Product-Image/IP-Camera/CB-20X-1820P.jpg");
+    /* background-image: url("/Product-Image/IP-Camera/CB-20X-1820P.jpg"); */
+    background-image: url("productImage/ipCamera/CB-20X-1820P.jpg");
 }
 #first1:hover+ #second1{
     display: block;
@@ -117,7 +118,7 @@
 /* IP Camera 2 */
 
 .containerr div2{
-    background-image: url("/Product-Image/IP-Camera/cctv-ip-camera-500x500.webp");
+    background-image: url("productImage/ipCamera/cctv-ip-camera-500x500.webp");
 }
 #first2:hover+ #second2{
     display: block;
@@ -126,7 +127,7 @@
 
 /* IP Camera 3 */
 .containerr div3{
-    background-image: url("/Product-Image/IP-Camera/cats5.jpg");
+    background-image: url("productImage/ipCamera/cats5.jpg");
 }
 #first3:hover+ #second3{
     display: block;
@@ -135,7 +136,7 @@
 
 /* IP Camera 4 */
 .containerr div4{
-    background-image: url("/Product-Image/IP-Camera/HI-4501IRE.jpg");
+    background-image: url("productImage/ipCamera/HI-4501IRE.jpg");
 }
 #first4:hover+ #second4{
     display: block;
@@ -145,7 +146,7 @@
 /* IP Camera 5 */
  
 .containerr div5{
-    background-image: url("/Product-Image/IP-Camera/unnamed 4.jpg");
+    background-image: url("productImage/ipCamera/unnamed 4.jpg");
 }
 #first5:hover+ #second5{
     display: block;
