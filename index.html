@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    <!-- <link rel="stylesheet" href="css/uikit.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./carouselStyle.css">
+    <title>Samtech</title>
+</head>
+<body>
+
+<!-- Top Section Branding -->
+    <section>
+        <div class="branding">
+            <div class="companyName">
+                <img src="./images/smtech.png" alt="" srcset="">
+            </div>
+            <div class="hotlinkNumber">
+                <h1>HOT LINE</h1>
+                <div class="hotline">
+                  <span><ion-icon name="call"></ion-icon></span>
+                  <a href="tel:8801819469644">8801819469644</a>
+               </div>
+               <div class="hotline">
+                  <span><ion-icon name="call"></ion-icon></span>
+                  <a href="tel:8801979688347">8801979688347</a>
+               </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Nav Section -->  
+    <header>
+        <!-- <a href="" class="logo">My Logo</a> -->
+      <div class="menuToggle"></div>
+        <nav>
+            <ul>
+                <li class="active"><a href="home.html">Home</a></li> 
+                <li><a href="about.html">About</a></li> 
+                <li><a href="#">CCTV Camera<b>▼</b></a>
+                    <ul>
+                        <li><a href="ipcamera.html">IP Camera</a></li> 
+                        <li><a href="hdcamera.html">HD Camera</a></li>
+                        <li><a href="#">Bullet Camera</a></li> 
+                        <li><a href="#">Dome Camera</a></li>
+                        <!-- <li><a href="#">Bullet Camera<b>+</b></a>
+                            <ul>
+                                <li><a href="#">Html</a></li>
+                                <li><a href="#">Css</a></li>
+                                <li><a href="#">JavaScript</a></li>
+                            </ul>
+                        </li> -->
+                    </ul>
+                </li>
+                <li><a href="#">XVR</a></li> 
+                <li><a href="#">NVR</a></li>
+                <li><a href="#">Access Control</a></li>  
+                <li><a href="#">Networking Products<b>▼</b></a>
+                    <ul>
+                        <li><a href="#">Router</a></li> 
+                        <li><a href="#">ONU & OLT</a></li>
+                        <li><a href="#">Optical Fiber</a></li>
+                        <li><a href="#">PLC & Splitter</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">More..<b>▼</b></a>
+                    <ul>
+                        <li><a href="#">Accessories</a></li> 
+                        <li><a href="#">Metal detector</a></li>
+                        <li><a href="#">PABX</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>         
+            </ul>
+        </nav>
+    </header>
+
+<!-- ***************************************************************
+    Slide/Carousel section start
+*************************************************************** -->
+<section class="slideshow-container">
+
+        <div class="mySlides fade">
+            <!-- <div class="numbertext">1 / 3</div> -->
+            <img src="./images/SlideCarouselImage/banner1.jpg" style="width:100%">
+            <!-- <div class="text">Caption One</div> -->
+        </div>
+
+        <div class="mySlides fade">
+            <!-- <div class="numbertext">2 / 3</div> -->
+            <img src="./images/SlideCarouselImage/banner2.jpg" style="width:100%">
+            <!-- <div class="text">Caption Two</div> -->
+        </div>
+
+        <div class="mySlides fade">
+            <!-- <div class="numbertext">3 / 3</div> -->
+            <img src="./images/SlideCarouselImage/banner3.jpg" style="width:100%">
+            <!-- <div class="text">Caption Three</div> -->
+        </div>
+        <div class="mySlides fade">
+            <!-- <div class="numbertext">3 / 3</div> -->
+            <img src="./images/SlideCarouselImage/banner4.jpg" style="width:100%">
+            <!-- <div class="text">Caption Three</div> -->
+        </div>
+        <div class="mySlides fade">
+            <!-- <div class="numbertext">3 / 3</div> -->
+            <img src="./images/SlideCarouselImage/banner5.jpg" style="width:100%">
+            <!-- <div class="text">Caption Three</div> -->
+        </div>
+
+        <a class="prevv" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="nextt" onclick="plusSlides(1)">&#10095;</a>
+        <br><br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div> 
+</section>
+
+
+<!-- Carousel Slider  -->
+
+<!-- <header>
+    <div class="logo">Lundev</div>
+    <nav>
+        <a href="">Home</a>
+        <a href="">Info</a>
+        <a href="">Contact</a>
+    </nav>
+</header> -->
+    <div class="carousel">
+        <div class="list">
+            <div class="item">
+                <img src="images/CarouselSliderImages/Campro-CB-remove-bg.png">
+                <div class="introduce">
+                    <div class="title">SAMTECH</div>
+                    <div class="topic">Bullet CCTV</div>
+                    <div class="des">
+                        <h3>SAMTECH CCTV Cameras best Features</h3><br>
+                            High Resolution for Clear Image Quality.<br>
+                            Night Vision for Round-the-Clock Surveillance.<br>
+                            Wide Dynamic Range (WDR) for Challenging Lighting Conditions.<br>
+                            Remote Access and Mobile Viewing for Real-Time Monitoring.<br>
+                            Motion Detection and Alerts for Intelligent Surveillance.<br>
+                    </div>
+                    <button class="seeMore">SEE MORE DETAILS &#8599</button>
+                </div>
+                <div class="detail">
+                    <div class="title">SAMTECH CCTV</div>
+                    <div class="des">
+                        <h3>SAMTECH CCTV Cameras best Features</h3><br>
+                            High Resolution for Clear Image Quality.<br>
+                            Night Vision for Round-the-Clock Surveillance.<br>
+                            Wide Dynamic Range (WDR) for Challenging Lighting Conditions.<br>
+                            Remote Access and Mobile Viewing for Real-Time Monitoring.<br>
+                            Motion Detection and Alerts for Intelligent Surveillance.<br>
+                    </div>
+                    <div class="specifications">
+                        <div>
+                            <p>Model</p>
+                            <p>AI-RH208</p>
+                        </div>
+                        <div>
+                            <p>Resolution</p>
+                            <p>3 Mega Pixel</p>
+                        </div>
+                        <div>
+                            <p>Night Vision</p>
+                            <p>40 meter</p>
+                        </div>
+                        <div>
+                            <p>Waterproof</p>
+                            <p>IP67</p>
+                        </div>
+                        <div>
+                            <p>Image Sensor</p>
+                            <p>1/3" SONY CCD</p>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <button>RELATED ITEM</button>
+                        <button>CONTACT</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/CarouselSliderImages/EA2702-IREA-removebg-preview.png">
+                <div class="introduce">
+                    <div class="title">SAMTECH</div>
+                    <div class="topic">Dome CCTV</div>
+                    <div class="des">
+                        <h3>SAMTECH CCTV Cameras best Features</h3><br>
+                            High Resolution for Clear Image Quality.<br>
+                            Night Vision for Round-the-Clock Surveillance.<br>
+                            Wide Dynamic Range (WDR) for Challenging Lighting Conditions.<br>
+                            Remote Access and Mobile Viewing for Real-Time Monitoring.<br>
+                            Motion Detection and Alerts for Intelligent Surveillance.<br>
+                    </div>
+                    <button class="seeMore">SEE MORE &#8599</button>
+                </div>
+                <div class="detail">
+                    <div class="title">SAMTECH CCTV</div>
+                    <div class="des">
+                        <h3>SAMTECH CCTV Cameras best Features</h3><br>
+                            High Resolution for Clear Image Quality.<br>
+                            Night Vision for Round-the-Clock Surveillance.<br>
+                            Wide Dynamic Range (WDR) for Challenging Lighting Conditions.<br>
+                            Remote Access and Mobile Viewing for Real-Time Monitoring.<br>
+                            Motion Detection and Alerts for Intelligent Surveillance.<br>
+                    </div>
+                    <div class="specifications">
+                        <div>
+                            <p>Model</p>
+                            <p>AI-RH208</p>
+                        </div>
+                        <div>
+                            <p>Resolution</p>
+                            <p>3 Mega Pixel</p>
+                        </div>
+                        <div>
+                            <p>Night Vision</p>
+                            <p>40 meter</p>
+                        </div>
+                        <div>
+                            <p>Waterproof</p>
+                            <p>IP67</p>
+                        </div>
+                        <div>
+                            <p>Image Sensor</p>
+                            <p>1/3" SONY CCD</p>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <button>RELATED ITEM</button>
+                        <button>CONTACT</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/CarouselSliderImages/NVR.png">
+                <div class="introduce">
+                    <div class="title">SAMTECH</div>
+                    <div class="topic">NVR</div>
+                    <div class="des">
+                        <h3>SAMTECH CCTV Cameras best Features</h3><br>
+                            High Resolution for Clear Image Quality.<br>
+                            Night Vision for Round-the-Clock Surveillance.<br>
+                            Wide Dynamic Range (WDR) for Challenging Lighting Conditions.<br>
+                            Remote Access and Mobile Viewing for Real-Time Monitoring.<br>
+                            Motion Detection and Alerts for Intelligent Surveillance.<br>
+                    </div>
+                    <button class="seeMore">SEE MORE &#8599</button>
+                </div>
+                <div class="detail">
+                    <div class="title">SAMTECH NVR</div>
+                    <div class="des">
+                        <h3>SAMTECH CCTV Cameras best Features</h3><br>
+                            High Resolution for Clear Image Quality.<br>
+                            Night Vision for Round-the-Clock Surveillance.<br>
+                            Wide Dynamic Range (WDR) for Challenging Lighting Conditions.<br>
+                            Remote Access and Mobile Viewing for Real-Time Monitoring.<br>
+                            Motion Detection and Alerts for Intelligent Surveillance.<br>
+                    </div>
+                    <div class="specifications">
+                        <div>
+                            <p>Model</p>
+                            <p>AI-RH208</p>
+                        </div>
+                        <div>
+                            <p>Resolution</p>
+                            <p>3 Mega Pixel</p>
+                        </div>
+                        <div>
+                            <p>Night Vision</p>
+                            <p>40 meter</p>
+                        </div>
+                        <div>
+                            <p>Waterproof</p>
+                            <p>IP67</p>
+                        </div>
+                        <div>
+                            <p>Image Sensor</p>
+                            <p>1/3" SONY CCD</p>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <button>RELATED ITEM</button>
+                        <button>CONTACT</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/CarouselSliderImages/XVR_16_H.265-removebg-preview.png">
+                <div class="introduce">
+                    <div class="title">SAMTECH</div>
+                    <div class="topic">XVR</div>
+                    <div class="des">
+                        <h3>SAMTECH CCTV Cameras best Features</h3><br>
+                            High Resolution for Clear Image Quality.<br>
+                            Night Vision for Round-the-Clock Surveillance.<br>
+                            Wide Dynamic Range (WDR) for Challenging Lighting Conditions.<br>
+                            Remote Access and Mobile Viewing for Real-Time Monitoring.<br>
+                            Motion Detection and Alerts for Intelligent Surveillance.<br>
+                    </div>
+                    <button class="seeMore">SEE MORE &#8599</button>
+                </div>
+                <div class="detail">
+                    <div class="title">SAMTECH XVR</div>
+                    <div class="des">
+                        <h3>SAMTECH CCTV Cameras best Features</h3><br>
+                            High Resolution for Clear Image Quality.<br>
+                            Night Vision for Round-the-Clock Surveillance.<br>
+                            Wide Dynamic Range (WDR) for Challenging Lighting Conditions.<br>
+                            Remote Access and Mobile Viewing for Real-Time Monitoring.<br>
+                            Motion Detection and Alerts for Intelligent Surveillance.<br>
+                    </div>
+                    <div class="specifications">
+                        <div>
+                            <p>Model</p>
+                            <p>AI-RH208</p>
+                        </div>
+                        <div>
+                            <p>Resolution</p>
+                            <p>3 Mega Pixel</p>
+                        </div>
+                        <div>
+                            <p>Night Vision</p>
+                            <p>40 meter</p>
+                        </div>
+                        <div>
+                            <p>Waterproof</p>
+                            <p>IP67</p>
+                        </div>
+                        <div>
+                            <p>Image Sensor</p>
+                            <p>1/3" SONY CCD</p>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <button>RELATED ITEM</button>
+                        <button>CONTACT</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/CarouselSliderImages/access-removebg-preview.png">
+                <div class="introduce">
+                    <div class="title">SAMTECH</div>
+                    <div class="topic">Access Control</div>
+                    <div class="des">
+                        <h3>SAMTECH CCTV Cameras best Features</h3><br>
+                            High Resolution for Clear Image Quality.<br>
+                            Night Vision for Round-the-Clock Surveillance.<br>
+                            Wide Dynamic Range (WDR) for Challenging Lighting Conditions.<br>
+                            Remote Access and Mobile Viewing for Real-Time Monitoring.<br>
+                            Motion Detection and Alerts for Intelligent Surveillance.<br>
+                    </div>
+                    <button class="seeMore">SEE MORE &#8599</button>
+                </div>
+                <div class="detail">
+                    <div class="title">SAMTECH ACCESS CONTROL</div>
+                    <div class="des">
+                        <h3>SAMTECH CCTV Cameras best Features</h3><br>
+                            High Resolution for Clear Image Quality.<br>
+                            Night Vision for Round-the-Clock Surveillance.<br>
+                            Wide Dynamic Range (WDR) for Challenging Lighting Conditions.<br>
+                            Remote Access and Mobile Viewing for Real-Time Monitoring.<br>
+                            Motion Detection and Alerts for Intelligent Surveillance.<br>
+                    </div>
+                    <div class="specifications">
+                        <div>
+                            <p>Model</p>
+                            <p>AI-RH208</p>
+                        </div>
+                        <div>
+                            <p>Resolution</p>
+                            <p>3 Mega Pixel</p>
+                        </div>
+                        <div>
+                            <p>Night Vision</p>
+                            <p>40 meter</p>
+                        </div>
+                        <div>
+                            <p>Waterproof</p>
+                            <p>IP67</p>
+                        </div>
+                        <div>
+                            <p>Image Sensor</p>
+                            <p>1/3" SONY CCD</p>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <button>RELATED ITEM</button>
+                        <button>CONTACT</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/CarouselSliderImages/Campro-PTZ.png">
+                <div class="introduce">
+                    <div class="title">SAMTECH</div>
+                    <div class="topic">PTZ CCTV</div>
+                    <div class="des">
+                        <h3>SAMTECH CCTV Cameras best Features</h3><br>
+                            High Resolution for Clear Image Quality.<br>
+                            Night Vision for Round-the-Clock Surveillance.<br>
+                            Wide Dynamic Range (WDR) for Challenging Lighting Conditions.<br>
+                            Remote Access and Mobile Viewing for Real-Time Monitoring.<br>
+                            Motion Detection and Alerts for Intelligent Surveillance.<br>
+                    </div>
+                    <button class="seeMore">SEE MORE &#8599</button>
+                </div>
+                <div class="detail">
+                    <div class="title">SAMTECH PTZ</div>
+                    <div class="des">
+                        <h3>SAMTECH CCTV Cameras best Features</h3><br>
+                            High Resolution for Clear Image Quality.<br>
+                            Night Vision for Round-the-Clock Surveillance.<br>
+                            Wide Dynamic Range (WDR) for Challenging Lighting Conditions.<br>
+                            Remote Access and Mobile Viewing for Real-Time Monitoring.<br>
+                            Motion Detection and Alerts for Intelligent Surveillance.<br>
+                    </div>
+                    <div class="specifications">
+                        <div>
+                            <p>Model</p>
+                            <p>AI-RH208</p>
+                        </div>
+                        <div>
+                            <p>Resolution</p>
+                            <p>3 Mega Pixel</p>
+                        </div>
+                        <div>
+                            <p>Night Vision</p>
+                            <p>40 meter</p>
+                        </div>
+                        <div>
+                            <p>Waterproof</p>
+                            <p>IP67</p>
+                        </div>
+                        <div>
+                            <p>Image Sensor</p>
+                            <p>1/3" SONY CCD</p>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <button>RELATED ITEM</button>
+                        <button>CONTACT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+            <button id="back">See All  &#8599</button>
+        </div>
+    </div>
+
+<!-- Particle Design -->
+
+   <div id="particles-js">
+        <div class="particleContent">
+            <h1>SAMTECH</h1>
+            <h2>Your right choice for proper surveillance</h2> 
+            <a href="./about.html" class="btn"><span>About Us</span></a>
+        </div>  
+   </div>
+
+
+<!-- Our Portfolio Image Slider -->
+<div class="portfolioImageSlider">
+    <h1>SAMTECH PRODUCT PORTFOLIO</h1>
+    <div class="slider">
+    <div class="slider-track">
+        <!-- 9 slides -->
+
+        <div class="slide">
+            <img src="./images/Portfolio-image-slide/Campro-PTZ.png">
+            <h2>PTZ IP CCTV</h2>
+            <a href="./ipcamera.html">View Detail</a>
+        </div>
+        <div class="slide">
+            <img src="./images/Portfolio-image-slide/EA2702-IREA-removebg-preview.png">
+            <h2>Dome CCTV</h2>
+             <a href="./ipcamera.html">View Detail</a>
+        </div>
+        <div class="slide">
+            <img src="./images/Portfolio-image-slide/Campro-CB-remove-bg.png">
+            <h2>HD CCTV</h2>
+             <a href="./ipcamera.html">View Detail</a>
+        </div>
+        <div class="slide">
+            <img src="./images/Portfolio-image-slide/access-removebg-preview.png">
+            <h2>ACCESS CONTROL</h2>
+             <a href="./ipcamera.html">View Detail</a>
+        </div>
+        <div class="slide">
+            <img src="./images/Portfolio-image-slide/HI-4501IRE-removebg.png">
+            <h2>Bullet CCTV</h2>
+             <a href="./ipcamera.html">View Detail</a>
+        </div>
+        <div class="slide">
+            <img src="./images/Portfolio-image-slide/NVR.png">
+            <h2>NVR</h2>
+             <a href="#">View Detail</a>
+        </div>
+        <div class="slide">
+            <img src="./images/Portfolio-image-slide/XVR_16_H.265-removebg-preview.png">
+            <h2>XVR</h2>
+             <a href="#">View Detail</a>
+        </div>
+        <div class="slide">
+            <img src="./images/Portfolio-image-slide/Garret.png">
+            <h2>Security Gate</h2>
+             <a href="#">View Detail</a>
+        </div>
+        <div class="slide">
+            <img src="./images/Portfolio-image-slide/pabx2-removebg.png">
+            <h2>PABX</h2>
+             <a href="#">View Detail</a>
+        </div>
+
+        <!-- Save 9 Slides Double -->
+
+        <div class="slide">
+            <img src="./images/Portfolio-image-slide/Campro-PTZ.png">
+            <h2>PTZ IP CCTV</h2>
+            <a href="#">View Detail</a>
+        </div>
+        <div class="slide">
+            <img src="./images/Portfolio-image-slide/EA2702-IREA-removebg-preview.png">
+            <h2>Dome CCTV</h2>
+             <a href="#">View Detail</a>
+        </div>
+        <div class="slide">
+            <img src="./images/Portfolio-image-slide/Campro-CB-remove-bg.png">
+            <h2>HD CCTV</h2>
+             <a href="#">View Detail</a>
+        </div>
+        <div class="slide">
+            <img src="./images/Portfolio-image-slide/access-removebg-preview.png">
+            <h2>ACCESS CONTROL</h2>
+             <a href="#">View Detail</a>
+        </div>
+        <div class="slide">
+            <img src="./images/Portfolio-image-slide/HI-4501IRE-removebg.png">
+            <h2>Bullet CCTV</h2>
+             <a href="#">View Detail</a>
+        </div>
+        <div class="slide">
+            <img src="./images/Portfolio-image-slide/NVR.png">
+            <h2>NVR</h2>
+             <a href="#">View Detail</a>
+        </div>
+        <div class="slide">
+            <img src="./images/Portfolio-image-slide/XVR_16_H.265-removebg-preview.png">
+            <h2>XVR</h2>
+             <a href="#">View Detail</a>
+        </div>
+        <div class="slide">
+            <img src="./images/Portfolio-image-slide/Garret.png">
+            <h2>Security Gate</h2>
+             <a href="#">View Detail</a>
+        </div>
+        <div class="slide">
+            <img src="./images/Portfolio-image-slide/pabx2-removebg.png">
+            <h2>PABX</h2>
+             <a href="#">View Detail</a>
+        </div>
+    </div>
+ </div>
+</div>
+ 
+<!-- Why Us Section -->
+<container class="whyUs">
+    <h1>Why Us</h1>
+    <div class="gallery-whyUs">
+        <div class="row">
+            <div class="box">
+                <div class="inner-box">
+                    <img src="./images/whyUsGallery/4.png">
+                    <p>HIGHLY MOTIVATED TEAM</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="inner-box">
+                    <img src="./images/whyUsGallery/1.png">
+                    <p>QUALITY ASSURANCE</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="inner-box">
+                    <img src="./images/whyUsGallery/8.png">
+                    <p>LATEST TECHNOLOGIES</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="inner-box">
+                    <img src="./images/whyUsGallery/3.png">
+                    <p>INNOVATIVE AND CUSTOMIZED SOLUTIONS</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="inner-box">
+                    <img src="./images/whyUsGallery/6.png">
+                    <p>WORLD-CLASS MANUFACTURING FACILITY</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="inner-box">
+                    <img src="./images/whyUsGallery/2.png">
+                    <p>WIDE RANGE OF PRODUCTS</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</container>
+
+    <!-- <script>
+        let menuToggle=document.querySelector('.menuToggle');
+        let header=document.querySelector('header');
+
+        menuToggle.onclick=function(){
+            header.classList.toggle('active');
+        }
+
+    </script> -->
+
+<!-- Water wave background effect animation  -->
+
+<div class="water-wave">
+    <h1>SAMTECH TECHNOLOGY</h1>
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+    <div class="wave wave4"></div>
+</div>
+
+<!-- Footer Part -->
+ <section id="secFooterContact">
+      <footer>
+         <div class="containerFooter">
+            <div class="sec aboutusFooter">
+               <h2>About Us</h2>
+               <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nesciunt, ducimus iusto sint quos doloremque in obcaecati non voluptatum harum vel incidunt architecto quis  Nobis accusantium consectetur modi?</p>            
+               <ul class="sci">
+                     <li><a href="#" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                     <li><a href="#" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a></li>
+                     <li><a href="#" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                     <li><a href="#" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                     <li><a href="#" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+               </ul>
+            </div>
+            <div class="sec quickLinks">
+                <h2>Quick Links</h2>
+                   <ul>
+                       <li><a href="index.html">Home</a></li>
+                       <li><a href="about.html">About us</a></li>
+                       <li><a href="services.html">Services</a></li>
+                       <li><a href="blog.html">Gallery</a></li>
+                       <li><a href="contact.html">Contact</a></li>
+                   </ul>
+            </div>            
+            <div class="sec contact">
+               <h2>Contact Info</h2>
+               <ul class="info">
+                  <li>
+                      <span><ion-icon name="location"></ion-icon></span>
+                      <span>37 New Super Market,<br>
+                        Baitul Mukarram, Dhaka-1000<br>Bangladesh</span>
+                  </li>
+                  <li style="margin-bottom: 30px;">
+                     <span><ion-icon name="call"></ion-icon></span>
+                     <p><a href="tel:8801819469644">8801819469644</a><br><a href="tel:8801979688347">8801979688347</a></p>
+                 </li>
+                 <li>
+                  <span><ion-icon name="mail"></ion-icon></span>
+                  <p><a href="mailto:radiohouse.net12@gmail.com">radiohouse.net12@gmail.com</a></p>
+              </li>
+               </ul>
+            </div>
+         </div>
+      </footer> 
+      <div class="copyrighttext">
+          <p> © SAMTECH, 2023 All Rights Reserved. <br>Designed & Developed by <span><a href="https://bipul-dev.github.io/Modern-Portfolio-Website/." target="_blank">World Technovision.</a></span></p> 
+      </div> 
+</section>
+<!-- ionics framework🧮  -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>   
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>   
+ 
+<!-- Carousel Slider JS Link -->
+    <script src="./carouselApp.js"></script>
+
+<!-- Particles JS Files -->
+<!-- first particles.js files and there app.js -->
+   <script src="particles.js"></script>
+   <script src="app.js"></script>
+
+    </script>  
+
+
+
+
+   <!-- Particles JS Files -->
+   <!-- first particles.js files and there app.js -->
+
+   <script src="particles.js"></script>
+   <script src="app.js"></script>
+
+
+   // Sticky Navigation Bar on Scroll using
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+<script>
+    $(window).scroll(function(){
+        if($(window).scrollTop()){
+            $("header").addClass("changeBackgroundColor");
+        }else{
+            $("header").removeClass("changeBackgroundColor");
+        }
+    })
+
+</script>
+
+
+    <!-- <script src="index.js"></script> -->
+    <script src="/js/home.js"></script>
+   
+
+
+    <!-- ionics framework🧮  -->
+<!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>    -->
+    
+<!--<script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>    -->
+</body>
+</html>
