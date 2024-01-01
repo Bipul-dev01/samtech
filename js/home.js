@@ -1,7 +1,7 @@
 
 
 /* **********************************************************
-    Slide/Carousel Section JS Code
+Slide/Carousel Section JS Code html Code index.html below Nav
 ********************************************************** */
 var slideIndex = 1;
 showSlides(slideIndex);

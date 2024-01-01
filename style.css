@@ -109,7 +109,9 @@ header ul .active a{
 
 header ul li a:hover{
     background: #2b93e3;
+    
 }
+
 header ul li ul{
     position: absolute;
     left: 0;
@@ -603,9 +605,9 @@ section .title::before{
     position: absolute;
     bottom: 0px;
     left: 50%;
-    width: 180px;
+    width: 320px;
     height: 3px;
-    background: #111;
+    background: green;
     transform: translateX(-50%);
 }
  section .title::after{ 
@@ -614,12 +616,12 @@ section .title::before{
     left: 50%;
     font-size: 22px;
     color: crimson;
-    padding: 5px;
+    padding: 5px 10px;
     background: #fff;
     transform: translateX(-50%);
 } 
 .about .title::after{
-     content: "who i am";
+     content: "proprietor message";
 }
 .about .about-content .left img{
     height: 400px;
@@ -648,6 +650,8 @@ section .title::before{
 }
 .about .about-content .right p{
     text-align: justify;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .about .about-content .right a{
     display: inline-block;
@@ -686,9 +690,9 @@ section .title-teams::before{
     position: absolute;
     bottom: 0px;
     left: 50%;
-    width: 180px;
+    width: 300px;
     height: 3px;
-    background: #111;
+    background: green;
     transform: translateX(-50%);
 }
  section .title-teams::after{ 
@@ -697,7 +701,7 @@ section .title-teams::before{
     left: 50%;
     font-size: 22px;
     color: crimson;
-    padding: 5px;
+    padding: 5px 10px;
     background: #fff;
     transform: translateX(-50%);
 } 
@@ -784,9 +788,9 @@ section .title-customer::before{
     position: absolute;
     bottom: 0px;
     left: 50%;
-    width: 180px;
+    width: 400px;
     height: 3px;
-    background: #111;
+    background: green;
     transform: translateX(-50%);
 }
  section .title-customer::after{ 
@@ -795,7 +799,7 @@ section .title-customer::before{
     left: 50%;
     font-size: 22px;
     color: crimson;
-    padding: 5px;
+    padding: 5px 10px;
     background: #fff;
     transform: translateX(-50%);
 } 
@@ -812,6 +816,7 @@ section .title-customer::before{
 }
 .valued-customer{
   margin-top: 100px;
+  margin-bottom: 80px;
 }
 .valued-customer .customer-list{
   display: flex;
