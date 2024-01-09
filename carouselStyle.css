@@ -125,6 +125,7 @@ header nav a{
     background-color: transparent;
     font-weight: bold;
     letter-spacing: 3px;
+    cursor: pointer;
     transition: background 0.5s;
 }
 .carousel .list .item .introduce .seeMore:hover{
@@ -330,6 +331,7 @@ header nav a{
     display: flex;
     justify-content: space-between;
     left: 50%;
+    margin-top: -100px;
     transform: translateX(-50%);
 }
 #prev,
@@ -342,6 +344,7 @@ header nav a{
     font-size: large;
     bottom: 20%;
     left: 10%;
+    cursor: pointer;
 }
 #next{
     left: unset;
@@ -359,6 +362,7 @@ header nav a{
     font-weight: bold;
     letter-spacing: 3px;
     background-color: transparent;
+    cursor: pointer;
     padding: 10px;
     /* opacity: 0; */
     transition: opacity 0.5s;
