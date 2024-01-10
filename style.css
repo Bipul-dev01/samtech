@@ -37,9 +37,10 @@ body{
     text-align: center;
 }
 .hotlinkNumber h1{
-  font-size: 1.8em;
+    font-size: 1.8em;
     color: red;
     font-weight: bold;
+    text-shadow: 2px 2px 2px #21de80;
 
 }
 .branding .hotline{
@@ -49,15 +50,16 @@ body{
   align-items: center;
 }
 .branding .hotline span{
-  min-width: 30px;
-  height: 30px;
+  min-width: 25px;
+  height: 25px;
   color: #fff;
   background: #18b7ff;
-  font-size: 1.1em;
+  font-size: .7em;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1.5px solid red;
 }
 .branding .hotline a{
   font-size: 1.5em;
