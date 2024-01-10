@@ -11,7 +11,9 @@ body{
     /* background: #bed7e4; */
 }
 
-/* Top Section Branding Styling */
+/* **********************************************************
+    Top Section Branding Styling
+********************************************************** */
 
 .branding{
     display: flex;
@@ -68,7 +70,10 @@ body{
    text-decoration: none;
 }
 
-/* Nav Section Styling */
+
+/* **********************************************************
+    Nav Section Styling
+********************************************************** */
 
 header{
     position: sticky;
@@ -127,8 +132,7 @@ header ul li ul{
     left: 0;
     width: 220px;
     background: #445964;
-    display: none;
-   
+    display: none;  
 }
 header ul li:hover > ul{
     display: block;
@@ -142,8 +146,6 @@ header ul li ul li ul{
     top: 0;
     left: 200px;
 }
-
-
 
 /* **********************************************************
     Slide/Carousel Section Styling
@@ -255,7 +257,9 @@ header ul li ul li ul{
 }
 }
 
-/* Particles Styling Start */
+/* **********************************************************
+    Particles Styling Start
+********************************************************** */
 
 #particles-js{
     position: relative;
@@ -300,7 +304,6 @@ header ul li ul li ul{
     background-color: green;
     transition: all 0.3s ease;
 }
-
 
 /* *********************************************************  
     Our Portfolio Image Slider Styling
@@ -398,11 +401,9 @@ header ul li ul li ul{
     transform: rotateZ(180deg);
   }
 
-
 /* *********************************************************  
     Styling Why Us 
 ********************************************************* */
-
 .whyUs{
   position: relative;
   width: 100%;
@@ -683,7 +684,6 @@ section .title::before{
   }
 }
 
-
 .about .about-content .right{
     width: 55%;
 }
@@ -717,8 +717,6 @@ section .title::before{
     color: crimson;
     background: none;
 }
-
-
 
 /* **********************************************************
     Teams Section Styling
@@ -903,11 +901,9 @@ section .title-customer::before{
   color: #000;
 }
 
-
 /* *********************************************************  
     Styling Contact Us 
 ********************************************************* */
-
 .text-animation{
   width: 100%;
   height: 200px;
@@ -945,7 +941,6 @@ section .title-customer::before{
         background-position: 2000px 0;
     }
 }
-
 
 /* Contact Us Page Styling  */
 
@@ -1109,7 +1104,7 @@ footer .containerFooter h2:before {
 footer p {
   color: #999; }
 .sci {
-  margin-top: 20px;
+  margin-top: 32px;
   display: flex; }
 .sci li {
   list-style: none; }
@@ -1152,6 +1147,14 @@ footer p {
 .contact {
   width: 33%;
   margin-right: 0 !important; }
+.contact h3{
+  font-size: 18px;
+  font-weight: 400;
+  color: #57adeb;
+  margin-bottom: 13px;
+  margin-top: -15px;
+  text-shadow: 2px 2px #000;
+  }
 .contact ul{
   padding-left: 0 !important;
 }
