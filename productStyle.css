@@ -112,7 +112,7 @@
 
 .containerr div1{
     /* background-image: url("/Product-Image/IP-Camera/CB-20X-1820P.jpg"); */
-    background-image: url("productImage/ipCamera/CB-20X-1820P.jpg");
+    background-image: url("productImage/ipCamera/01-samtechCCTV.png");
 }
 #first1:hover+ #second1{
     display: block;

@@ -35,6 +35,10 @@ body{
   margin-top: -15px;
   letter-spacing: 2px;
 }
+.branding .cctvLogo img{
+  width: 120px;
+  height: 120px;
+}
 .hotlinkNumber{
     text-align: center;
 }
