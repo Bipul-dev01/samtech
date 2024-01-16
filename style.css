@@ -524,6 +524,15 @@ header ul li ul li ul{
   letter-spacing: 3px;
   text-shadow: 2px 2px #fff;
 }
+.water-wave h2{
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  /* font-weight: bold; */
+  padding-top: 8px;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px #303030;
+}
 
 .water-wave .wave{
   position: absolute;

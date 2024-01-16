@@ -109,7 +109,7 @@ header nav a{
     line-height: 1em;
 }
 .carousel .list .item .introduce .topic{
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 500;
 }
 .carousel .list .item .introduce .des{
@@ -118,7 +118,7 @@ header nav a{
 }
 .carousel .list .item .introduce .seeMore{
     font-family: Poppins;
-    margin-top: 1.2em;
+    margin-top: 10px;
     padding: 5px 0;
     border: none;
     border-bottom: 1px solid #555;
@@ -276,7 +276,7 @@ header nav a{
     pointer-events: auto;
 }
 .carousel.showDetail .list .item:nth-child(2) .detail .title{
-    font-size: 4em;
+    font-size: 3em;
 }
 .carousel.showDetail .list .item:nth-child(2) .detail .specifications{
     display: flex;
@@ -293,17 +293,25 @@ header nav a{
 .carousel.showDetail .list .item:nth-child(2) .detail .specifications div p:nth-child(1){
     font-weight: bold;
 }
-.carousel.carousel.showDetail .list .item:nth-child(2) .checkout button{
+.carousel.carousel.showDetail .list .checkout{
+    margin-top: 20px;
+}
+.carousel.carousel.showDetail .list .item:nth-child(2) .checkout a{
     font-family: Poppins;
     background-color: transparent;
+    text-decoration: none;
     border: 1px solid #5555;
     margin-left: 5px;
     padding: 5px 10px;
     letter-spacing: 2px;
     font-weight: 500;
 }
-.carousel.carousel.showDetail .list .item:nth-child(2) .checkout button:nth-child(2){
+.carousel.carousel.showDetail .list .item:nth-child(2) .checkout a:nth-child(2){
     background-color: #693EFF;
+    color: #eee;
+}
+.carousel.carousel.showDetail .list .item:nth-child(2) .checkout a:nth-child(2):hover{
+    background-color: #0c7e41;
     color: #eee;
 }
 .carousel.showDetail .list .item:nth-child(2) .detail  .title,
@@ -342,7 +350,8 @@ header nav a{
     font-family: monospace;
     border: 3px solid crimson;
     font-size: large;
-    bottom: 20%;
+    /* bottom: 20%; */
+    margin-top: -90px;
     left: 10%;
     cursor: pointer;
 }
@@ -353,7 +362,8 @@ header nav a{
 #back{
     position: absolute;
     z-index: 100;
-    bottom: 0%;
+    /* bottom: 0%; */
+    margin-top: -90px;
     left: 50%;
     transform: translateX(-50%);
     border: none;
