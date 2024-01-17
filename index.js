@@ -95,7 +95,7 @@ first1.addEventListener('mouseout', function(){
 // IP Camera 3
 //*******************************************************
 
-var lens3=document.getElementById('lens3');
+        var lens3=document.getElementById('lens3');
         var first3=document.getElementById('first3');
         var second3=document.getElementById('second3');
 
@@ -117,7 +117,7 @@ var lens3=document.getElementById('lens3');
 // IP Camera 4
 //*******************************************************
 
-var lens4=document.getElementById('lens4');
+        var lens4=document.getElementById('lens4');
         var first4=document.getElementById('first4');
         var second4=document.getElementById('second4');
 
@@ -139,7 +139,7 @@ var lens4=document.getElementById('lens4');
 // IP Camera 5
 //*******************************************************
 
-var lens5=document.getElementById('lens5');
+        var lens5=document.getElementById('lens5');
         var first5=document.getElementById('first5');
         var second5=document.getElementById('second5');
 
@@ -157,3 +157,17 @@ var lens5=document.getElementById('lens5');
         first5.addEventListener('mouseout', function(){
             lens5.style.display = "none";
         })
+
+
+
+// HD Camera 
+//*******************************************************
+
+
+// Bullet Camera 
+//*******************************************************
+
+
+// Dome Camera 1
+//*******************************************************
+    // script code on domecamera.html page

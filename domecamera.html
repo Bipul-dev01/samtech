@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">   
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./productStyle.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">   
     <title>Samtech</title>
 </head>
 <body>
@@ -46,10 +47,10 @@
                 <li><a href="about.html">About</a></li> 
                 <li><a href="#">CCTV Camera<b>▼</b></a>
                     <ul>
-                        <li><a href="ipcamera.html">IP Camera</a></li> 
+                        <li class="active"><a href="ipcamera.html">IP Camera</a></li> 
                         <li><a href="hdcamera.html">HD Camera</a></li>
                         <li><a href="bulletcamera.html">Bullet Camera</a></li> 
-                        <li><a href="domecamera.html">Dome Camera</a></li>
+                        <li class="active"><a href="domecamera.html">Dome Camera</a></li>
                         <!-- <li><a href="#">Bullet Camera<b>+</b></a>
                             <ul>
                                 <li><a href="#">Html</a></li>
@@ -77,68 +78,62 @@
                         <li><a href="#">PABX</a></li>
                     </ul>
                 </li>
-                <li class="active"><a href="contact.html">Contact</a></li>         
+                <li><a href="contact.html">Contact</a></li>         
             </ul>
         </nav>
     </header>
 
-    <!-- ****************************************************************
-      Text Animation
-**************************************************************** -->
-   <div class="text-animation">
-      <div class="infinity-text">
-         <h1> SAMTECH </h1>
-      </div>
-   </div>  
-<!-- ************************************************************
-   Contact Us Get in Touch Start
-************************************************************ -->
- <section id="contactUs">
-    <div class="titleContact">
-      <h2>Get In Touch</h2>
-    </div>
-    <div class="boxContact">
-       <!-- Form -->
-       <div class="contactt formc">
-          <h3>SAMTECH Your right choice</h3>
-          <div class="imagec">
-            <img src="./images/favicon.png">
-         </div>
-          <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci et omnis dolorem. Sapiente perferendis veniam distinctio, rerum eligendi voluptas veritatis accusantium nisi amet repellat, perspiciatis facilis. Unde distinctio commodi nobis aliquam vel excepturi minima, eveniet esse facilis sapiente labore amet repudiandae ad optio iure voluptas consequuntur obcaecati corporis ratione corrupti neque. Incidunt, quidem vitae! Eligendi ad architecto pariatur ipsum earum illo inventore autem deleniti maiores?</p>     
-       </div>
-       <!-- Info Box -->
-       <div class="contactt infoc">
-            <h3>Contact info</h3>
-            <div class="infoBox mt-4">
-               <div>
-                  <span><ion-icon name="location"></ion-icon></span>
-                  <p>Shop No-52, <br>37 New Super Market,<br>
-                        Baitul Mukarram, Dhaka-1000<br>Bangladesh</p>
-               </div>  
-               <div>
-                 <span><ion-icon name="mail"></ion-icon></span>
-                 <p><a href="mailto:cameracity23@gmail.com">cameracity23@gmail.com</a></p>              
-              </div>             
-              <div>
-                 <span><ion-icon name="call"></ion-icon></span>
-                 <a href="tel:8801819469644">8801819469644</a>
-              </div>
-              <!-- Social Media Link: -->
-              <ul class="sml">
-                 <li><a href="https://www.facebook.com/CameraCityBD?mibextid=zLoPMf" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                 <li><a href="#" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a></li>
-                 <li><a href="#" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                 <li><a href="#" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                 <li><a href="#" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
-              </ul>
+<!-- Product Description -->
+
+<!-- Dome Camera 1 Description -->
+
+<div class="containerr">
+    <divD1 id="firstD1">
+        <span id="lensD1"></span>
+    </divD1>
+    <divD1 id="secondD1"></divD1> 
+    <divProduct class="productDes">
+            <h1>
+                SAMTECH DOME CCTV
+            </h1>
+            <h2>
+                Model : AL-RH230
+                  Country of Origin : Korea<br>
+                  4.0MP POE Network Full Color 2-Way Audio Dome Camera
+            </h2>
+            <p>
+                Feature :<br>
+                Image Sensor : 1/2.8" SONY color CMOS<br>
+                Min. Illumination : Color: 0.01Lux @F1.2, B/W: 0Lux with IR on<br>
+                Lens : 2.8mm lens<br>
+                POE : IEEE802.3af<br>
+                IR Distance : Up to 30m<br>
+                WDR : Digital WDR<br>
+                Video Frame Rate : 30fps<br>
+                Housing : Metal Bullet<br>
+                Max.Video Resolution : 4MP(2560*1440)@15fps<br>
+                Networking Protocol : TCP/IP, HTTP,RTSP,DHCP,NTP,UPNP<br>
+                
+            </p>
+            <!-- <span>
+                $150
+            </span> -->
+            <div>
+                <a class="buy" href="about.html">About Us</a>
+                <a class="cart"  href="contact.html">Contact Now</a>
             </div>
-       </div>
-       <!-- Map Box -->
-       <div class="contactt mapc">
-         <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3652.4886789017482!2d90.4098989243909!3d23.729947039563015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s37%20New%20Super%20Market%2C%20Baitul%20Mukarram%2C%20Dhaka-1000%20Bangladesh!5e0!3m2!1sen!2sbd!4v1703162778673!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-       </div>
-    </div>
- </section>
+        </divProduct>
+</div>
+
+    <!-- Line1 line2 Gradient color    -->
+        <div class="hrLine1">
+            <div class="leftLine"></div>
+            <div class="rightLine"></div>
+        </div>
+<!-- Dome Camera 2 Description -->
+
+
+
 <!-- Footer Part -->
  <section id="secFooterContact">
       <footer>
@@ -214,17 +209,42 @@
 </script>
    
 
+<!-- Dome CCTV Image Magnifying Script Code -->
+<script>
+    var lensD1=document.getElementById('lensD1');
+    var firstD1=document.getElementById('firstD1');
+    var secondD1=document.getElementById('secondD1');
+
+    firstD1.addEventListener('mousemove', function(e){
+
+        var x = e.clientX - e.target.offsetLeft;
+        var y = e.clientY - e.target.offsetTop;
+
+        lensD1.style.display = "block";
+        lensD1.style.left = x + 'px';
+        lensD1.style.top = y +250+ 'px';
+
+        secondD1.style.backgroundPosition = (x - (500/2/6))* -6 + 'px ' + (y - (500/2/6))* -6 + 'px';
+    })
+    firstD1.addEventListener('mouseout', function(){
+        lensD1.style.display = "none";
+    })
+</script>
+
+
 
 <script src="index.js"></script>
 
 <!-- ionics framework🧮  -->
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>   
-    <script src="js/jquery.min.js"></script>
+<!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>    -->
+    <!-- <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/uikit.min.js"></script>
-    <script src="js/uikit-icons.min.js"></script>   
+    <script src="js/uikit-icons.min.js"></script>  -->
+    
+
     
 </body>
 </html>

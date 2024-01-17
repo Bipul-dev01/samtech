@@ -12,7 +12,7 @@
     background: linear-gradient(to right, #55c88b, #2e8b57);
 }
 
-.containerr div1,div2,div3,div4,div5{
+.containerr div1,div2,div3,div4,div5,divD1{
     width: 500px;
     height: 500px;
     border: 1px solid #000;
@@ -32,13 +32,13 @@
     position: absolute;
     overflow: hidden;
 }
-#first1,#first2,#first3,#first4,#first5{
+#first1,#first2,#first3,#first4,#first5,#firstD1{
     top: 50%;
     left: 15%;
     transform: translateY(-50%);
     border: none;
 }
-#second1, #second2,#second3,#second4,#second5{
+#second1, #second2,#second3,#second4,#second5,#secondD1{
     background-size: 200% 200%;
     top: 50%;
     left: 50%;
@@ -46,7 +46,7 @@
     z-index: 1000;
     display: none;
 }
-#lens1, #lens2,#lens3,#lens4,#lens5{
+#lens1,#lens2,#lens3,#lens4,#lens5,#lensD1{
     width: 150px;
     height: 150px;
     background: rgba(0,0,0,0.4);
@@ -112,9 +112,10 @@
 }
 
 /* Individual Code */
-
+/* ********************************************
+            IP CCTV 
+******************************************** */
 /* IP Camera 1 */
-
 .containerr div1{
     /* background-image: url("/Product-Image/IP-Camera/CB-20X-1820P.jpg"); */
     background-image: url("productImage/ipCamera/01-SAM-CCTV.png");
@@ -124,14 +125,12 @@
 }
 
 /* IP Camera 2 */
-
 .containerr div2{
     background-image: url("productImage/ipCamera/02-SAM-CCTV.jpg");
 }
 #first2:hover+ #second2{
     display: block;
 }
-
 
 /* IP Camera 3 */
 .containerr div3{
@@ -141,7 +140,6 @@
     display: block;
 }
 
-
 /* IP Camera 4 */
 .containerr div4{
     background-image: url("productImage/ipCamera/04-SAM-CCTV.png");
@@ -150,9 +148,93 @@
     display: block;
 }
 
+/* IP Camera 5 */ 
+.containerr div5{
+    background-image: url("productImage/ipCamera/05-SAM-CCTV.png");
+}
+#first5:hover+ #second5{
+    display: block;
+}
+/* ********************************************
+            HD CCTV 
+******************************************** */
+/* HD Camera 1 */
+.containerr div1{
+    /* background-image: url("/Product-Image/IP-Camera/CB-20X-1820P.jpg"); */
+    background-image: url("productImage/hdCamera/01-SAM-CCTV.png");
+}
+#first1:hover+ #second1{
+    display: block;
+}
 
-/* IP Camera 5 */
- 
+/* HD Camera 2 */
+.containerr div2{
+    background-image: url("productImage/hdCamera/02-SAM-CCTV.jpg");
+}
+#first2:hover+ #second2{
+    display: block;
+}
+
+/* HD Camera 3 */
+.containerr div3{
+    background-image: url("productImage/hdCamera/03-SAM-CCTV.png");
+}
+#first3:hover+ #second3{
+    display: block;
+}
+
+/* HD Camera 4 */
+.containerr div4{
+    background-image: url("productImage/hdCamera/04-SAM-CCTV.png");
+}
+#first4:hover+ #second4{
+    display: block;
+}
+
+/* HD Camera 5 */ 
+.containerr div5{
+    background-image: url("productImage/hdCamera/05-SAM-CCTV.png");
+}
+#first5:hover+ #second5{
+    display: block;
+}
+/* ********************************************
+            Bullet CCTV 
+******************************************** */
+/* Bullet Camera 1 */
+.containerr div1{
+    /* background-image: url("/Product-Image/IP-Camera/CB-20X-1820P.jpg"); */
+    background-image: url("productImage/ipCamera/01-SAM-CCTV.png");
+}
+#first1:hover+ #second1{
+    display: block;
+}
+
+/* Bullet Camera 2 */
+.containerr div2{
+    background-image: url("productImage/ipCamera/02-SAM-CCTV.jpg");
+}
+#first2:hover+ #second2{
+    display: block;
+}
+
+/* Bullet Camera 3 */
+.containerr div3{
+    background-image: url("productImage/ipCamera/03-SAM-CCTV.png");
+}
+#first3:hover+ #second3{
+    display: block;
+}
+
+/* Bullet Camera 4 */
+/* .containerr div4{
+    background-image: url("productImage/ipCamera/04-SAM-CCTV.png");
+} */
+/* #first4:hover+ #second4{
+    display: block;
+} */
+
+/* Bullet Camera 5 */ 
 .containerr div5{
     background-image: url("productImage/ipCamera/05-SAM-CCTV.png");
 }
@@ -160,6 +242,49 @@
     display: block;
 }
 
+/* ********************************************
+            Dome CCTV 
+******************************************** */
+/* Dome Camera 1 */
+.containerr divD1{
+    /* background-image: url("/Product-Image/IP-Camera/CB-20X-1820P.jpg"); */
+    background-image: url("productImage/domeCamera/04-SAM-CCTV.png");
+}
+#firstD1:hover+ #secondD1{
+    display: block;
+}
+
+/* Dome Camera 2 */
+/* .containerr divD2{
+    background-image: url("productImage/ipCamera/02-SAM-CCTV.jpg");
+}
+#first2:hover+ #second2{
+    display: block;
+} */
+
+/* Dome Camera 3 */
+/* .containerr div3{
+    background-image: url("productImage/ipCamera/03-SAM-CCTV.png");
+}
+#first3:hover+ #second3{
+    display: block;
+} */
+
+/* Dome Camera 4 */
+/* .containerr div4{
+    background-image: url("productImage/ipCamera/04-SAM-CCTV.png");
+}
+#first4:hover+ #second4{
+    display: block;
+} */
+
+/* Dome Camera 5 */ 
+/* .containerr div5{
+    background-image: url("productImage/ipCamera/05-SAM-CCTV.png");
+}
+#first5:hover+ #second5{
+    display: block;
+} */
 /* ******************************************************
     Line1 Line2 Gradient Styling 
 ****************************************************** */
