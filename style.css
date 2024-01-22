@@ -127,8 +127,7 @@ header ul .active a{
 }
 
 header ul li a:hover{
-    background: #2b93e3;
-    
+    background: #2b93e3;    
 }
 
 header ul li ul{
@@ -148,7 +147,8 @@ header ul li ul li{
 }
 header ul li ul li ul{
     top: 0;
-    left: 200px;
+    left: 220px;
+    background: #1d7f8c;
 }
 
 /* **********************************************************
@@ -270,6 +270,8 @@ header ul li ul li ul{
     width: 100%;
     height: 100vh;
     background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("./images/cctv-monitoring.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-bottom: 50px;
     display: flex;
     flex-direction: column;
@@ -1065,8 +1067,8 @@ section .title-customer::before{
   color: #0e3959;
   font-weight: 500;
   font-size: 1.8em;
-  margin-top: 10px;
-  margin-bottom: 20px; }
+  margin-top: 20px;
+  margin-bottom: 25px; }
 .infoc {
   background: #0e3959; }
 .infoc h3 {
@@ -1096,7 +1098,7 @@ section .title-customer::before{
   text-decoration: none;
   font-size: 1.1em; }
 .sml {
-  margin-top: 40px;
+  margin-top: 80px;
   display: flex; }
 .sml li {
   list-style: none;
@@ -1194,7 +1196,7 @@ footer p {
 .quickLinks ul li a {
   color: #999;
   text-decoration: none;
-  margin-bottom: 14px;
+  margin-bottom: 8px;
   display: inline-block; }
 .quickLinks ul li a:hover {
   color: #fff; }
