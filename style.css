@@ -261,6 +261,55 @@ header ul li ul li ul{
 }
 }
 
+
+/* **********************************************************
+    Moving Text Styling Start
+********************************************************** */
+.moving{
+  min-height: 20vh;
+  margin-top: -100px;
+  width: 100%;
+  background-color: #EFEAE3;
+  white-space: nowrap;
+}
+.moving-text{
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.moving-text::-webkit-scrollbar{
+  display: none;
+}
+.con{
+  white-space: nowrap;
+  display: inline-block;
+  animation-name: move;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.moving-text h1{
+  font-size: 5vw;
+  /* background-color: lightblue; */
+  color: rgb(53, 127, 53);
+  padding-top: 15PX;
+  display: inline-block;
+}
+#gola{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: #FE320A;
+  margin: .5vw 1.5vw;
+  display: inline-block;
+}
+@keyframes move{
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-100%);
+  }
+}
 /* **********************************************************
     Particles Styling Start
 ********************************************************** */
