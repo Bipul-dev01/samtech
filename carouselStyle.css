@@ -450,3 +450,69 @@ header nav a{
         float: right;
     }
 }
+
+@media screen and (max-width: 480px){
+    .carousel{
+       position: relative;
+    /* height: 800px; */
+    height: 620px;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    }
+    .carousel .list{
+    position: absolute;
+    width: 1140px;
+    max-width: 90%;
+    height: 72%;
+    left: 50%;
+}
+.arrows{
+    position: absolute;
+    bottom: 10px;
+    /* width: 1140px; */
+    width: 300px ;
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+    left: 50%;
+    margin-top: 50px;
+    transform: translateX(-50%);
+}
+#prev,
+#next{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-family: monospace;
+    border: 2px solid crimson;
+    font-size: large;
+    /* bottom: 20%; */
+    margin-top: -70px;
+    left: 10%;
+    cursor: pointer;
+}
+#next{
+    left: unset;
+    right: 10%;
+}
+#back{
+    position: absolute;
+    z-index: 100;
+    /* bottom: 0%; */
+    margin-top: -90px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    border-bottom: 1px solid #555;
+    font-family: Poppins;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 10px;
+    /* opacity: 0; */
+    transition: opacity 0.5s;
+}
+
+}

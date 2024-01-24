@@ -1498,6 +1498,7 @@ footer p {
 /* Home Page Navbar */
 header{
   padding: 10px 20px;
+  min-height:40px ;
 }
 header nav{
   position: absolute;
@@ -1580,7 +1581,6 @@ header.active .menuToggle::after{
 
 }
 
-
 @media screen and (max-width: 480px){
 
 /* Home Page Top Section Branding */
@@ -1611,13 +1611,319 @@ header.active .menuToggle::after{
       min-width: 12px;
       height: 12px;
       font-size: .5em;
-      border: 1.5px solid red;
+      border: 0.7px solid red;
     }
     .branding .hotline a{
       font-size: .6em;
       padding-left: 6px;
     }
+
+/* Home Page Slide/Carousel Section */
+  .mySlides img {
+      height: 20vh; 
+  }
+  .slideshow-container {
+    max-width: 97%;
+    margin-top: 10px;
+    padding-bottom: 0;
+  }
+  .prevv, .nextt {
+  top: 50%;
+  padding: 12px;
+  margin-top: -48px;
+  font-size: 18px;
+  border-radius: 0 3px 3px 0;
+}
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+}
+.dot-section{
+  margin-top: -38px;
+}
+/* Home Section Carousel Slider */
+
+ /* Follow carouselStyle.css Page */
+
+/* Home Section Moving Text */
+  .moving{
+  min-height: 10vh;
+  margin-top: -100px;
+  width: 100%;
+}
+.moving-text{
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.moving-text h1{
+  font-size: 5vw;
+  padding-top: 20PX;
+}
+#gola{
+  height: 15px;
+  width: 15px;
+  margin: 0 1vw;
+}
+
+
+/* Home Section Particle Design */
+  #particles-js{
+    width: 100%;
+    height: 60vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("./images/cctv-monitoring.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+#particles-js .particleContent h1{
+   font-size: 33px;
+   margin-bottom: 10px;
+}
+#particles-js .particleContent h2{
+    font-size: 22px;
+    margin-bottom: 50px; 
+}
+#particles-js .particleContent .btn{
+    padding: 8px 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    font-size: 15px;
+}
+#particles-js .particleContent .btn span{
+    position: relative;
+    z-index: 1;
+}
+/* Home Section Our Portfolio Image Slider */
+  .portfolioImageSlider{
+    min-height: 90vh;
+  }
+  .portfolioImageSlider h1{
+      font-size: 25px;
+      margin-bottom: 5px;
+      text-shadow: 1px 1px #000;
+  }
+  .slider{
+    height: 450px;
+    width: 100%;
+  }
+  .slider-track{
+    width: calc(450px*18);
+  }
+  .slide{
+    width: 450px;
+    height: 360px;
+    padding: 2px;
+    perspective: 100px;
+  }
+  .slide img{
+    width: 350px;
+    height: 260px;
+    padding-bottom: 6px;
+  }
+  .slide a{
+    font-size: 13px;
+    margin-top: 10px;
+    padding: 5px 15px;
+    border-radius: 10px;
+  }
   
+/* Home Section Why Us Section */
+    .whyUs{
+  position: relative;
+  width: 100%;
+  height: 1060px;
+  /* background-color: orangered; */
+  background-image: linear-gradient(45deg, rgb(211, 163, 18), orangered);
+  padding: 20px 30px;
+  display: flex;
+  justify-content: center;
+}
+.whyUs h1{
+  position: absolute;
+  text-align: center;
+  padding-top: 32px;
+  margin-bottom: 52px;
+  color: #fff;
+  font-size: 32px;
+}
+.whyUs .gallery-whyUs{
+  position: absolute;
+  margin-top: 100px;
+  width: 80%;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+.whyUs .gallery-whyUs .row{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+  align-items: center;
+  margin: auto;
+}
+.whyUs .gallery-whyUs .row .box{
+   width: 320px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 10px;
+  /* background: orangered; */
+}
+
+.whyUs .gallery-whyUs .row .box .inner-box{
+  width: 290px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 10px;
+  /* background: orangered; */
+}
+.inner-box:nth-child(1){
+  position: absolute;
+   border-bottom: 1px solid #fff;
+}
+.inner-box:nth-child(2){
+   border-bottom: 2px solid #fff;
+}
+.inner-box:nth-child(6){
+   border-bottom: 2px solid #e917ad;
+}
+
+.whyUs .gallery-whyUs .row .box img{
+  width: 40px;
+  padding-bottom: 20px;
+}
+.whyUs .gallery-whyUs .row .box .inner-box p{
+  font-size: 14px;
+}
+.whyUs .gallery-whyUs .row .box:nth-child(2){
+  border-left: 0px solid #fff;
+  border-right: 0px solid #fff;
+}
+.whyUs .gallery-whyUs .row .box:nth-child(5){
+  border-left: 0px solid #fff;
+  border-right: 0px solid #fff;
+}
+.whyUs .gallery-whyUs .row .box .inner-box:hover{
+  background: blue;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: all 0.6s ease;
+}
+
+/* Home Page Water wave background effect animation */
+    .water-wave{
+  width: 100%;
+  height: 55vh;
+  margin-bottom: -40px;
+}
+.water-wave h1{
+  font-size: 20px;
+  padding-top: 100px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px #fff;
+}
+.water-wave img{
+  position: absolute;
+  width: 270px;
+  height: 60px;
+  margin-top: 20px;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.water-wave h2{
+  font-size: 23px;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 25px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px #303030;
+}
+
+.water-wave .wave{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: url(./images/wave.png);
+  background-size: 800px 100px;
+}
+.water-wave .wave.wave1{
+  animation: animate 30s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+@keyframes animate{
+  0%{
+    background-position-x: 0 ;
+  }
+  100%{
+    background-position-x: 1000px ;
+  }
+}
+.water-wave .wave.wave2{
+  animation: animate2 15s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+@keyframes animate2{
+  0%{
+    background-position-x: 0 ;
+  }
+  100%{
+    background-position-x: -1000px ;
+  }
+}
+.water-wave .wave.wave3{
+  animation: animate 15s linear infinite;
+  z-index: 998;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15px;
+}
+/* @keyframes animate3{
+  0%{
+    background-position-x: 0 ;
+  }
+  100%{
+    background-position-x: -1000px ;
+  }
+} */
+.water-wave .wave.wave4{
+  animation: animate2 5s linear infinite;
+  z-index: 997;
+  opacity: 0.7;
+  animation-delay: -5s;
+  bottom: 20px;
+}
+
+/* Footer for all Page */
+
+.sci li a {
+  /* display: inline-block; */
+  width: 42px;
+  height: 42px;
+  font-size: 1.8em;
+ }
+
   
   /* footer Copy Right */
   .copyrighttext p span{
