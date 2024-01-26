@@ -55,7 +55,7 @@ header nav a{
     /* height: 800px; */
     height: 620px;
     overflow: hidden;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 100px;
 }
 .carousel .list{
@@ -103,14 +103,16 @@ header nav a{
     transform:  translateY(-50%);
     transition: opacity 0.5s;
 }
-.carousel .list .item .introduce .title{
-    font-size: 2em;
-    font-weight: 500;
-    line-height: 1em;
+.carousel .list .item .introduce .title img{
+    margin-top: -40px;
+    margin-right: 200px;
+    width: 200px;
+    height: 50px;
 }
 .carousel .list .item .introduce .topic{
-    font-size: 3em;
+    font-size: 1.4em;
     font-weight: 500;
+    margin-top: -10px;
 }
 .carousel .list .item .introduce .des{
     font-size: small;
@@ -247,6 +249,21 @@ header nav a{
 .carousel .list .item .detail{
     opacity: 0;
     pointer-events: none;
+}
+.carousel .list .item .detail .title-detail{
+    position: relative;
+    
+}
+.carousel .list .item .detail .title-detail img{
+    position: absolute;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 50px;
+    margin-right: -280px;
+}
+.carousel .list .item .detail .des{
+    margin-top: 18px;
 }
 /* showDetail */
 .carousel.showDetail .list .item:nth-child(3),
