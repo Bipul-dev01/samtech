@@ -369,22 +369,10 @@
     transform: translateY(-25%);
     border: none;
 }
-#secondD1{
-    background-size: 200% 200%;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%);
-    z-index: -1000;
+#second1,#second2,#second3,#second4,#second5,#secondD1{
     display: none;
 }
-#lensD1{
-    width: 150px;
-    height: 150px;
-    background: rgba(0,0,0,0.4);
-    position: absolute;
-    border: 3px solid #00b050;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
+#lens1,#lens2,#lens3,#lens4,#lens5,#lensD1{
     display: none;
 } 
 .productDes .companyBrand h1{
@@ -424,14 +412,31 @@
 
 /* Individual Code */
 
-/* Dome Camera 1 */
+/* IP Bullet Camera 1 */
+#first1:hover+ #second1{
+    display: none;
+}
+#first2:hover+ #second2{
+    display: none;
+}
+#first3:hover+ #second3{
+    display: none;
+}
+#first4:hover+ #second4{
+    display: none;
+}
+#first5:hover+ #second5{
+    display: none;
+}
+
+
+/* IP Dome Camera 1 */
 
 .containerr divD1{
     /* background-image: url("/Product-Image/IP-Camera/CB-20X-1820P.jpg"); */
     background-image: url("productImage/domeCamera/04-SAM-CCTV.png");
 }
 #firstD1:hover+ #secondD1{
-    /* display: block; */
     display: none;
 }
 
