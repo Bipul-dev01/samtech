@@ -40,8 +40,8 @@
     </section>
 
 <!-- Nav Section -->  
-    <header >
-        <!-- <a href="" class="logo">My Logo</a> -->
+    <header class="navbar">
+       <a href="index.html" class="logo"><img src="images/smtech-crop.png"></a>
       <div class="menuToggle"></div> 
         <nav>
             <ul>
@@ -370,7 +370,12 @@
       </footer> 
       <div class="copyrighttext">
           <p> © SAMTECH, 2023 All Rights Reserved. <br>Designed & Developed by <span><a href="https://bipul-dev.github.io/Modern-Portfolio-Website/." target="_blank">World Technovision.</a></span></p> 
-      </div> 
+      </div>
+      
+      <div class="scrollTop float-right">
+         <ion-icon name="arrow-up-outline" onclick="topFunction()" id="myBtn"></ion-icon>
+         <!-- <i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"></i> -->
+      </div>
 </section>
 
 <!-- Script code for Navbar menuToggle -->
@@ -381,7 +386,33 @@
         menuToggle.onclick=function(){
             header.classList.toggle('active');
         }
-    </script> 
+    </script>
+    
+<!-- JavaScript for Scroll up Button -->
+<script>       
+//Get the button
+   myButton=document.getElementById("myBtn");
+   navbar=document.getElementById("navbar");
+   //When the user scroll down 20px from the top of the document, show the button.
+   window.onscroll=function() {scrollFunction()};
+   function scrollFunction(){
+      if(document.body.scrollTop>20 || document.documentElement.scrollTop>20){
+         myButton.style.display="block";
+            // navbar.style.background="#3300CC";
+            navbar.style.opacity=0.9;
+      }else{
+         myButton.style.display="none";
+        //    navbar.style.background="#008000";
+           navbar.style.opacity=1;
+      }
+   }
+   //when the user clicks on the button, scroll to the top of the document
+   function topFunction(){
+      document.body.scrollTop=0; //For Safari;
+      document.documentElement.scrollTop=0 //For Chrome, FireFox, IE & Opera
+   }
+</script>
+
 
 
 <!-- ionics framework🧮  -->
