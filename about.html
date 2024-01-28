@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./carouselStyle.css">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">   
+
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Samtech</title>
 </head>
 <body>
@@ -384,8 +387,23 @@
             $("header").removeClass("changeBackgroundColor");
         }
     })
-
 </script>
+
+<!-- ScrollReveal -->
+<script>
+     ScrollReveal({ 
+        reset: true,
+        distance: '60px',
+        duration:2500,
+        delay: 400
+      });
+      ScrollReveal().reveal('.branding, .carousel', { delay: 200, origin : 'bottom' });
+      ScrollReveal().reveal('.teams, .card', { delay: 200, origin : 'bottom' });
+      ScrollReveal().reveal('.aboutusFooter', { delay: 300, origin : 'left' });
+      ScrollReveal().reveal('.quickLinks', { delay: 300, origin : 'bottom' });
+      ScrollReveal().reveal('.contact', { delay: 300, origin : 'right' });
+</script>
+
 
 
     <!-- <script src="index.js"></script> -->

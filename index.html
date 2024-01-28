@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./carouselStyle.css">
     <link rel="stylesheet" href="./productStyle.css">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">   
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <title>Samtech</title>
 </head>
@@ -544,9 +546,9 @@
 
    <div id="particles-js">
         <div class="particleContent">
-            <img src="images/smtech-crop.png">
+            <img class="particleLogo" src="images/smtech-crop.png">
             <!-- <h1>SAMTECH</h1> -->
-            <h2>Your right choice for proper surveillance</h2> 
+            <h2 class="particleh2">Your right choice for proper surveillance</h2> 
             <a href="./about.html" class="btn"><span>About Us</span></a>
         </div>  
    </div>
@@ -854,6 +856,22 @@
         }
     })
 
+</script>
+
+<!-- ScrollReveal -->
+<script>
+     ScrollReveal({ 
+        reset: true,
+        distance: '60px',
+        duration:2500,
+        delay: 400
+      });
+      ScrollReveal().reveal('.branding, .carousel', { delay: 200, origin : 'bottom' });
+      ScrollReveal().reveal('.particleLogo, .particleh2, .btn', { delay: 200, origin : 'bottom' });
+      ScrollReveal().reveal('.whyUs, .box', { delay: 200, origin : 'bottom' });
+      ScrollReveal().reveal('.aboutusFooter', { delay: 300, origin : 'left' });
+      ScrollReveal().reveal('.quickLinks', { delay: 300, origin : 'bottom' });
+      ScrollReveal().reveal('.contact', { delay: 300, origin : 'right' });
 </script>
 
 
