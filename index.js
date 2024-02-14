@@ -64,7 +64,7 @@ first1.addEventListener('mousemove', function(e){
     lens1.style.left = x + 'px';
     lens1.style.top = y +250+ 'px';
 
-    second1.style.backgroundPosition = (x - (500/2/6))* -6 + 'px ' + (y - (500/2/6))* -6 + 'px';
+    second1.style.backgroundPosition = (x - (850/2/6))* -6 + 'px ' + (y - (850/2/6))* -6 + 'px';
 })
 first1.addEventListener('mouseout', function(){
     lens1.style.display = "none";
@@ -86,7 +86,7 @@ first1.addEventListener('mouseout', function(){
             lens2.style.left = x + 'px';
             lens2.style.top = y +250+ 'px';
 
-            second2.style.backgroundPosition = (x - (500/2/6))* -6 + 'px ' + (y - (500/2/6))* -6 + 'px';
+            second2.style.backgroundPosition = (x - (850/2/6))* -6 + 'px ' + (y - (850/2/6))* -6 + 'px';
         })
         first2.addEventListener('mouseout', function(){
             lens2.style.display = "none";
@@ -108,7 +108,7 @@ first1.addEventListener('mouseout', function(){
             lens3.style.left = x + 'px';
             lens3.style.top = y +250+ 'px';
 
-            second3.style.backgroundPosition = (x - (500/2/6))* -6 + 'px ' + (y - (500/2/6))* -6 + 'px';
+            second3.style.backgroundPosition = (x - (850/2/6))* -6 + 'px ' + (y - (850/2/6))* -6 + 'px';
         })
         first3.addEventListener('mouseout', function(){
             lens3.style.display = "none";

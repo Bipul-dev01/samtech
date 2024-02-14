@@ -9,7 +9,7 @@
     width: 100vw;
     height: 98vh;
     position: relative;
-    background: linear-gradient(to right, #55c88b, #2e8b57);
+    background: linear-gradient(to right, #8cdeb2, #8fe6b5);
 }
 
 .containerr div1,div2,div3,div4,div5,divD1{
@@ -296,24 +296,27 @@
 ****************************************************** */
 
 .hrLine1{
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;  
-    background: linear-gradient(to right, #55c88b, #2e8b57);
+  
+    /* background: linear-gradient(to right, #c88155, #2e8b57); */
 }
 .leftLine{
-    width: 40%;
-    height: 2px;
+    width: 50%;
+    height: 3px;
     /* background: red; */
-    background: radial-gradient(circle, rgb(235, 151, 35) 0%, rgb(36, 213, 98) 100%);
+    background: radial-gradient(circle, rgb(235, 151, 35) 0%, rgb(172, 227, 191) 100%);
 }
 .rightLine{
-    width: 37%;
-    height: 2px;
+    width: 50%;
+    height: 3px;
     /* background: green; */
-     background: radial-gradient(circle, rgb(209, 13, 144) 0%, rgb(16, 202, 81) 100%);
-    margin-left: 15px;
+     background: radial-gradient(circle, rgb(209, 13, 144) 0%, rgb(203, 219, 209) 100%);
+    /* margin-left: 15px; */
 }
 
 
