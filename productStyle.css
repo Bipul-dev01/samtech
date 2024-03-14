@@ -4,14 +4,66 @@
     box-sizing: border-box;
 }
 
+/* Hotline call */
+.pulse{
+    height: 60px;
+    width: 60px;
+    background: linear-gradient(#8a82fb, #407ed7);
+    /* position: absolute; */
+    position: fixed;
+    margin: auto;
+    left: 6%;
+    /* right: 0; */
+    top: 60%;
+    bottom: 0;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    cursor: pointer;  
+    z-index: 9999999999; 
+    opacity: .8;
+}
+.pulse:hover a{
+   color: greenyellow; 
+}
+.pulse a{
+    color: #ffffff;
+    cursor: pointer;
+    z-index: 9999999999;
+}
+.pulse:before,
+.pulse:after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color:#8a82fb ;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.7;
+}
+.pulse:before{
+    animation: pulse 1s ease-out infinite;
+}
+.pulse:after{
+    animation: pulse 2s ease-out infinite;
+}
+@keyframes pulse{
+    100%{
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+
 /* Common Code */
 .containerr{
     width: 100vw;
     height: 98vh;
     position: relative;
-    background: linear-gradient(to right, #8cdeb2, #8fe6b5);   
+    background: linear-gradient(to right, #8bd2ac, #a8f5c9);   
 }
-.containerr div1,div2,div3,divD1,div6,div7,div8,divD6,divX1,divX2,divX3,divN1,divN2,divN3{
+.containerr div1,div2,div3,divD1,divD2,div6,div7,div8,divD6,divX1,divX2,divX3,divN1,divN2,divN3{
     width: 500px;
     height: 500px;
     border: 1px solid #000;
@@ -25,7 +77,7 @@
 }
 .containerr divProduct{
     width: 500px;
-    height: 500px;
+    min-height: 500px;
     padding: 25px;
     top: 50%;
     left: 70%;
@@ -46,16 +98,16 @@
 .productDes .companyBrand img{
     width: 200px;
     height: 50px;
-    margin-top: -40px;
+    margin-top: -30px;
     margin-left: 10px;
 }
-#first1,#first2,#first3,#firstD1,#firstD6,#first6,#first7,#first8,#firstX1,#firstX2,#firstX3,#firstN1,#firstN2,#firstN3{
+#first1,#first2,#first3,#firstD1,#firstD2,#firstD6,#first6,#first7,#first8,#firstX1,#firstX2,#firstX3,#firstN1,#firstN2,#firstN3{
     top: 50%;
     left: 15%;
     transform: translateY(-50%);
     border: none;
 }
-#second1,#second2,#second3,#secondD1,#second6,#second7,#second8,#secondD6,#secondX1,#secondX2,#secondX3,#secondN1,#secondN2,#secondN3{
+#second1,#second2,#second3,#secondD1,#secondD2,#second6,#second7,#second8,#secondD6,#secondX1,#secondX2,#secondX3,#secondN1,#secondN2,#secondN3{
     background-size: 200% 200%;
     top: 50%;
     left: 50%;
@@ -63,7 +115,7 @@
     z-index: 1000;
     display: none;
 }
-#lens1,#lens2,#lens3,#lensD1,#lens6,#lens7,#lens8,#lensD6,#lensX1,#lensX2,#lensX3,#lensN1,#lensN2,#lensN3{
+#lens1,#lens2,#lens3,#lensD1,#lensD2,#lens6,#lens7,#lens8,#lensD6,#lensX1,#lensX2,#lensX3,#lensN1,#lensN2,#lensN3{
     width: 150px;
     height: 150px;
     background: rgba(0,0,0,0.4);
@@ -75,10 +127,11 @@
 } 
 .productDes h1{
     margin: 0px 0 0px 0;
-    margin-top: -10px;
+    margin-top: -2px;
+    padding-left: 20px;
     color: #fff;
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 600;
     text-shadow: 1px 2px #000;
 }
 .productDes h2{
@@ -90,6 +143,7 @@
     font-size: 15px;
     line-height: 20px;
     margin-bottom: 30px;
+    line-height: 21px;
     color: #000;
 }
 .productDes div{
@@ -141,7 +195,7 @@
 
 /* IP Camera 2 */
 .containerr div2{
-    background-image: url("productImage/IPBulletCCTV/02-B-CCTV.jpg");
+    background-image: url("productImage/IPBulletCCTV/AL-RH215.png");
 }
 #first2:hover+ #second2{
     display: block;
@@ -158,10 +212,18 @@
 /* ********************************************
             IP Dome CCTV 
 ******************************************** */
+/* Ip Dome 1 */
 .containerr divD1{
-    background-image: url("productImage/IPDomeCCTV/01-SAM-CCTV.png");
+    background-image: url("productImage/IPDomeCCTV/Al-RH230FullColor.png");
 }
 #firstD1:hover+ #secondD1{
+    display: block;
+}
+/* Ip Dome 2 */
+.containerr divD2{
+    background-image: url("productImage/IPDomeCCTv/AL-RH204\(night\ Vision\).png");
+}
+#firstD2:hover+ #secondD2{
     display: block;
 }
 
@@ -170,7 +232,7 @@
 ******************************************** */
 /* HD Camera 1 */
 .containerr div6{
-    background-image: url("productImage/HDBulletCCTV/01-SAM-CCTV.png");
+    background-image: url("productImage/HDBulletCCTV/AL-RH220.png");
 }
 #first6:hover+ #second6{
     display: block;
@@ -178,7 +240,7 @@
 
 /* HD Camera 2 */
 .containerr div7{
-    background-image: url("productImage/HDBulletCCTV/02-SAM-CCTV.jpg");
+    background-image: url("productImage/HDBulletCCTV/AL-RH220.png");
 }
 #first7:hover+ #second7{
     display: block;
@@ -186,7 +248,50 @@
 
 /* HD Camera 3 */
 .containerr div8{
-    background-image: url("productImage/HDBulletCCTV/03-SAM-CCTV.png");
+    background-image: url("productImage/HDBulletCCTV/AL-RH210.png");
+}
+#first8:hover+ #second8{
+    display: block;
+}
+
+/* HD Camera 4 */
+.containerr div8{
+    background-image: url("productImage/HDBulletCCTV/AL-RH210.png");
+}
+#first8:hover+ #second8{
+    display: block;
+}
+/* HD Camera 5 */
+.containerr div8{
+    background-image: url("productImage/HDBulletCCTV/AL-RH210.png");
+}
+#first8:hover+ #second8{
+    display: block;
+}
+/* HD Camera 6 */
+.containerr div8{
+    background-image: url("productImage/HDBulletCCTV/AL-RH210.png");
+}
+#first8:hover+ #second8{
+    display: block;
+}
+/* HD Camera 7 */
+.containerr div8{
+    background-image: url("productImage/HDBulletCCTV/AL-RH210.png");
+}
+#first8:hover+ #second8{
+    display: block;
+}
+/* HD Camera 8 */
+.containerr div8{
+    background-image: url("productImage/HDBulletCCTV/AL-RH210.png");
+}
+#first8:hover+ #second8{
+    display: block;
+}
+/* HD Camera 9 */
+.containerr div8{
+    background-image: url("productImage/HDBulletCCTV/AL-RH210.png");
 }
 #first8:hover+ #second8{
     display: block;
@@ -197,7 +302,7 @@
 ******************************************** */
 /* HD Camera 1 */
 .containerr divD6{
-    background-image: url("productImage/HDDomeCCTV/01-SAM-CCTV.png");
+    background-image: url("productImage/HDDomeCCTV/AL-RH204\(night\ Vision\).png");
 }
 #firstD6:hover+ #secondD6{
     display: block;
@@ -208,7 +313,7 @@
 ******************************************** */
 /* XVR 1 */
 .containerr divX1{
-    background-image: url("productImage/HDDomeCCTV/01-SAM-CCTV.png");
+    background-image: url("productImage/XVR/XVR-4-Ch.png");
 }
 #firstX1:hover+ #secondX1{
     display: block;
@@ -216,7 +321,7 @@
 
 /* XVR 2 */
 .containerr divX2{
-    background-image: url("productImage/HDDomeCCTV/01-SAM-CCTV.png");
+    background-image: url("productImage/XVR/XVR-8Ch.png");
 }
 #firstX2:hover+ #secondX2{
     display: block;
@@ -224,7 +329,7 @@
 
 /* XVR 3 */
 .containerr divX3{
-    background-image: url("productImage/HDDomeCCTV/01-SAM-CCTV.png");
+    background-image: url("productImage/XVR/XVR-16-Ch.png");
 }
 #firstX3:hover+ #secondX3{
     display: block;
@@ -290,6 +395,13 @@
 
 @media screen and (max-width: 480px){
 
+/* Hotline call */
+.pulse{
+    height: 50px;
+    width: 50px;
+    left: 7%;
+    font-size: 18px;
+}
    /* Common Code */
 .containerr{
     width: 100%;
@@ -300,7 +412,7 @@
     justify-content: center;  
 }
 
-.containerr div1,div2,div3,divD1,div6,div7,div8,divD6,divX1,divX2,divX3,divN1,divN2,divN3{
+.containerr div1,div2,div3,divD1,divD2,div6,div7,div8,divD6,divX1,divX2,divX3,divN1,divN2,divN3{
     width: 300px;
     height: 300px;
     border: 1px solid #000;
@@ -312,7 +424,7 @@
 .containerr divProduct{
     display: block;
     width: 300px;
-    height: 585px;
+    min-height: 585px;
     margin-top: 9px;
     padding: 15px;
     top: 69%;
@@ -334,16 +446,16 @@
     margin-right: 3px;
     left: 0;
 }
-#first1,#first2,#first3,#firstD1,#first6,#first7,#first8,#firstD6,#firstX1,#firstX2,#firstX3,#firstN1,#firstN2,#firstN3{
+#first1,#first2,#first3,#firstD1,#firstD2,#first6,#first7,#first8,#firstD6,#firstX1,#firstX2,#firstX3,#firstN1,#firstN2,#firstN3{
     top: 13%;
     left: 10%;
     transform: translateY(-25%);
     border: none;
 }
-#second1,#second2,#second3,#secondD1,#second6,#second7,#second8,#secondD6,#secondX1,#secondX2,#secondX3,#secondN1,#secondN2,#secondN3{
+#second1,#second2,#second3,#secondD1,#secondD2,#second6,#second7,#second8,#secondD6,#secondX1,#secondX2,#secondX3,#secondN1,#secondN2,#secondN3{
     display: none;
 }
-#lens1,#lens2,#lens3,#lensD1,#lens6,#lens7,#lens8,#lensD6,#lensX1,#lensX2,#lensX3,#lensN1,#lensN2,#lensN3{
+#lens1,#lens2,#lens3,#lensD1,#lensD2,#lens6,#lens7,#lens8,#lensD6,#lensX1,#lensX2,#lensX3,#lensN1,#lensN2,#lensN3{
     display: none;
 } 
 .productDes .companyBrand h1{
@@ -396,6 +508,11 @@
 /* IP Dome Camera 1 */
 
 #firstD1:hover+ #secondD1{
+    display: none;
+}
+/* IP Dome Camera 2 */
+
+#firstD2:hover+ #secondD2{
     display: none;
 }
 
