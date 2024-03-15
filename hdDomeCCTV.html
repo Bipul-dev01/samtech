@@ -119,16 +119,16 @@
             </h2>
             <p>
                 Feature :<br><br>
-                Image Sensor : 1/2.8" SONY color CMOS<br>
-                Lens : 3.6mm lens<br>
-                POE : IEEE802.3af<br>
-                IR Distance : Up to 30m<br>
-                WDR : Digital WDR<br>
-                Weather Proof Ratings: IP66<br>
-                Power Supply : DC12V±10%/POE<br>
-                Housing : Metal Bullet<br>
-                Max.Video Resolution : 3MP(2560*1440)@15fps<br>
-                Networking Protocol : TCP/IP, HTTP,RTSP,DHCP,NTP,UPNP<br>
+                ●  &nbsp;Image Sensor : 1/2.8" SONY color CMOS<br>
+                ●  &nbsp;Lens : 3.6mm lens<br>
+                ●  &nbsp;POE : IEEE802.3af<br>
+                ●  &nbsp;IR Distance : Up to 30m<br>
+                ●  &nbsp;WDR : Digital WDR<br>
+                ●  &nbsp;Weather Proof Ratings: IP66<br>
+                ●  &nbsp;Power Supply : DC12V±10%/POE<br>
+                ●  &nbsp;Housing : Metal Bullet<br>
+                ●  &nbsp;Max.Video Resolution : 3MP(2560*1440)@15fps<br>
+                ●  &nbsp;Networking Protocol : TCP/IP, HTTP,RTSP,DHCP,NTP,UPNP<br>
                 
             </p>
             <div class="buyCart">
@@ -144,6 +144,49 @@
             <div class="rightLine"></div>
         </div>   
 
+<!-- HD Dome CCTV Camera 2 Description -->
+
+    <div class="containerr">
+         <divD7 id="firstD7">
+            <span id="lensD7"></span>
+        </divD7>
+        <divD7 id="secondD7"></divD7>
+        <divProduct class="productDes">
+            <div class="companyBrand">  
+                <img src="images/smtech-crop.png"> 
+                <h1>HD Dome</h1>     
+            </div>
+            <h2>
+                Model : AL-RH204
+                  Country of Origin : Korea<br>
+                  3 MP Camera
+            </h2>
+            <p>
+                Feature :<br><br>
+                ●  &nbsp;Image Sensor : 1/2.8" SONY color CMOS<br>
+                ●  &nbsp;Lens : 3.6mm lens<br>
+                ●  &nbsp;POE : IEEE802.3af<br>
+                ●  &nbsp;IR Distance : Up to 30m<br>
+                ●  &nbsp;WDR : Digital WDR<br>
+                ●  &nbsp;Weather Proof Ratings: IP66<br>
+                ●  &nbsp;Power Supply : DC12V±10%/POE<br>
+                ●  &nbsp;Housing : Metal Bullet<br>
+                ●  &nbsp;Max.Video Resolution : 3MP(2560*1440)@15fps<br>
+                ●  &nbsp;Networking Protocol : TCP/IP, HTTP,RTSP,DHCP,NTP,UPNP<br>
+                
+            </p>
+            <div class="buyCart">
+                <a class="buy" href="about.html">About Us</a>
+                <a class="cart"  href="contact.html">Contact Now</a>
+            </div>
+        </divProduct>
+    </div>
+
+    <!-- Line1 line2 Gradient color    -->
+        <div class="hrLine1">
+            <div class="leftLine"></div>
+            <div class="rightLine"></div>
+        </div>   
 <!-- Footer Part -->
  <section id="secFooterContact">
       <footer>
@@ -217,8 +260,7 @@
         }
     </script>
   
-  
-<!-- Dome CCTV Image Magnifying Script Code -->
+<!-- HD Dome 1 CCTV Image Magnifying Script Code -->
 <script>
     var lensD6=document.getElementById('lensD6');
     var firstD6=document.getElementById('firstD6');
@@ -237,6 +279,28 @@
     })
     firstD6.addEventListener('mouseout', function(){
         lensD6.style.display = "none";
+    })
+</script> 
+
+<!-- HD Dome 2 CCTV Image Magnifying Script Code -->
+<script>
+    var lensD7=document.getElementById('lensD7');
+    var firstD7=document.getElementById('firstD7');
+    var secondD7=document.getElementById('secondD7');
+
+    firstD7.addEventListener('mousemove', function(e){
+
+        var x = e.clientX - e.target.offsetLeft;
+        var y = e.clientY - e.target.offsetTop;
+
+        lensD7.style.display = "block";
+        lensD7.style.left = x + 'px';
+        lensD7.style.top = y +250+ 'px';
+
+        secondD7.style.backgroundPosition = (x - (500/2/6))* -6 + 'px ' + (y - (500/2/6))* -6 + 'px';
+    })
+    firstD7.addEventListener('mouseout', function(){
+        lensD7.style.display = "none";
     })
 </script> 
 

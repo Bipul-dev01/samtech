@@ -150,7 +150,7 @@ header ul .active a{
 }
 
 header ul li a:hover{
-    background: #2b93e3;    
+    background: #2b93e3; 
 }
 
 header ul li ul{
@@ -1276,7 +1276,9 @@ footer .containerFooter h2:before {
   height: 2px;
   background: #f00; }
 footer p {
-  color: #999; }
+  color: #999; 
+  font-family: 'Poppins', sans-serif;
+}
 .sci {
   margin-top: 32px;
   display: flex; }
