@@ -8,6 +8,8 @@
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">   
     <!-- Font Awesome Icon CDN for Hotline Call -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Samtech</title>
 </head>
 <body>
@@ -354,7 +356,21 @@
 
     </script>  
 
-    
+<!-- ScrollReveal -->
+<script>
+     ScrollReveal({ 
+        reset: true,
+        distance: '60px',
+        duration:2500,
+        delay: 400
+      });
+      ScrollReveal().reveal('.branding, .carousel', { delay: 200, origin : 'bottom' });
+    //   ScrollReveal().reveal('.particleLogo, .particleh2, .btn', { delay: 200, origin : 'bottom' });
+    //   ScrollReveal().reveal('.whyUs, .box', { delay: 200, origin : 'bottom' });
+      ScrollReveal().reveal('.aboutusFooter', { delay: 250, origin : 'left' });
+      ScrollReveal().reveal('.quickLinks', { delay: 250, origin : 'bottom' });
+      ScrollReveal().reveal('.contact', { delay: 250, origin : 'right' });
+</script>     
 
 <script src="index.js"></script>
 
