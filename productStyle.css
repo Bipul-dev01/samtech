@@ -197,7 +197,7 @@
 ******************************************** */
 /* IP Camera 1 */
 .containerr div1{
-    background-image: url("productImage/IPBulletCCTV/01-B-CCTV.png");
+    background-image: url("productImage/IPBulletCCTV/RH-233-F.png");
 }
 #first1:hover+ #second1{
     display: block;
@@ -312,7 +312,7 @@
 ******************************************** */
 /* HD Dome Camera 1 */
 .containerr divD6{
-    background-image: url("productImage/HDDomeCCTV/AL-RH204\(night\ Vision\).png");
+    background-image: url("productImage/HDDomeCCTV/AL-RH230.png");
 }
 #firstD6:hover+ #secondD6{
     display: block;
