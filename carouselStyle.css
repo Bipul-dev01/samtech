@@ -82,7 +82,7 @@ header nav a{
     transform: translateX(0);
 }
 .carousel .list .item img{
-    width: 50%;
+    width: 55%;
     position: absolute;
     right: 0;
     top: 50%;
@@ -115,7 +115,8 @@ header nav a{
 }
 .carousel .list .item .introduce .des{
     font-size: small;
-    color: #5559;
+    /* color: #5559; */
+    color: rgba(14, 14, 14, 0.6);
 }
 .carousel .list .item .introduce .seeMore{
     font-family: Poppins;
@@ -481,9 +482,12 @@ header nav a{
     .carousel .list{
     position: absolute;
     width: 1140px;
-    max-width: 90%;
+    max-width: 92%;
     height: 72%;
     left: 50%;
+}
+.carousel .list .item img{
+    width: 52%;
 }
 .carousel .list .item .introduce .title img{
     margin-top: -40px;
