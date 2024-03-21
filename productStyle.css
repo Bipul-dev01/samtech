@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+
 /* Hotline call */
 .pulse{
     height: 60px;
@@ -23,7 +24,7 @@
     place-items: center;
     font-size: 20px;
     cursor: pointer;  
-    z-index: 9999999999; 
+    z-index: 999; 
     opacity: .8;
 }
 .pulse:hover a{
@@ -89,8 +90,8 @@
     position: absolute;
     overflow: hidden;
     box-shadow: -1px 6px 20px 5px rgba(23,21,21,0.74);
-    -webkit-box-shadow: -1px 6px 20px 5px rgba(23,21,21,0.74);
-    -moz-box-shadow: -1px 6px 20px 5px rgba(23,21,21,0.74);
+    -webkit-box-shadow: -1px 6px 15px 5px rgba(23,21,21,0.74);
+    -moz-box-shadow: -1px 6px 15px 5px rgba(23,21,21,0.74);
     border-radius: 15px;
 }
 .productDes .companyBrand{
@@ -112,7 +113,7 @@
 #second1,#second2,#second3,#secondD1,#secondD2,#second6,#second7,#second8,#second9,#second10,#second11,#second12,#second13,#second14,#secondD6,#secondD7,#secondX1,#secondX2,#secondX3,#secondX4,#secondX5,#secondX6,#secondN1,#secondN2,#secondN3{
     background-size: 200% 200%;
     top: 50%;
-    left: 50%;
+    left: 52%;
     transform: translateY(-50%);
     z-index: 1000;
     display: none;
@@ -443,6 +444,7 @@
     width: 50px;
     left: 7%;
     font-size: 18px;
+    z-index: 99;
 }
    /* Common Code */
 .containerr{
@@ -470,16 +472,37 @@
     /* min-height: 585px; */
     min-height: 300px;
     /* margin-top: -10px; */
-    padding: 15px;
-    top: 69%;
-    /* top: 66%; */
+    padding: 12px;
+    /* top: 71%; */
+    top: 67%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 3px solid #13b963;
+    border: 2px solid #13b963;
     background-size: 100% 100%;
     position: absolute;
     overflow: hidden;
 }
+#container-hdBullet{
+ min-height: 120vh !important;
+}
+#hdBullet-special{
+    top: 70%;
+}
+
+#container-xvr{
+ min-height: 144vh !important;
+}
+#xvr-special{
+    top: 68%;
+}
+
+#container-nvr{
+ min-height: 145vh !important;
+}
+#nvr-special{
+    top: 68%;
+}
+
 .productDes .companyBrand{
     display: flex;
     flex-direction: row;

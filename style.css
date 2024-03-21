@@ -210,12 +210,31 @@ header ul li a{
     text-decoration: none !important;
     display: flex;
     justify-content: space-between;
+    
 }
 header ul .active a{
   /* color: red; */
   font-weight: 600;
   /* font-style: italic; */
 }
+
+header ul li a::before {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 2.5px;
+        bottom: -2px;
+        left: 50%;
+        background: rgb(210, 177, 106);
+        transition: .5s;
+    }
+
+    header ul li a:hover::before,
+    header ul li a.active::before {
+        width: 100%;
+        left: 0;
+    }
+
 
 header ul li a:hover{
     background: #2b93e3; 
@@ -224,6 +243,7 @@ header ul li a:hover{
 header ul li ul{
     position: absolute;
     left: 0;
+    top: 68px;
     width: 220px;
     background: #445964;
     display: none;  
@@ -234,7 +254,7 @@ header ul li:hover > ul{
 header ul li ul li{
     position: relative;
     width: 100%;
-    border: 1px solid rgba(0,0,0,0.2);
+    border-bottom: 1.5px solid rgba(0,0,0,0.2);
 }
 header ul li ul li ul{
     top: 0;
@@ -1387,7 +1407,9 @@ footer p {
   margin-bottom: 8px;
   display: inline-block; }
 .quickLinks ul li a:hover {
-  color: #fff; }
+  color: #fff;
+}
+
 .contact {
   width: 33%;
   margin-right: 0 !important; }
@@ -1571,17 +1593,21 @@ footer p {
     header ul li ul{
     position: absolute;
     left: 0;
+    top: 0px;
     width: 220px;
     /* background: red; */
     background: none;
     display: none;  
 }
-    header ul li a{
+ header ul li a::before {
+        height: 0px;
+    }
+ header ul li a{
     font-size: 1.1em;
     padding: 10px 15px;
     padding-left: 20px;
 }
-    header nav ul li ul{
+ header nav ul li ul{
         position: relative;
         width: 100%;
         left: 0;
@@ -1592,7 +1618,7 @@ footer p {
     header ul li ul li{
       position: relative;
       width: 100%;
-      border: 1px solid rgba(0,0,0,0.2);
+      border: 1.5px solid rgba(0,0,0,0.2);
     }
      header ul li ul li ul li{
       position: relative;
