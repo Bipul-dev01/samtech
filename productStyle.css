@@ -656,3 +656,64 @@
 }
 
 }
+@media screen and (max-width: 360px){
+    .containerr div1,div2,div3,divD1,divD2,div6,div7,div8,div9,div10,div11,div12,div13,div14,divD6,divD7,divX1,divX2,divX3,divX4,divX5,divX6,divN1,divN2,divN3{
+    width: 300px;
+    height: 300px;
+    border: 1px solid #000;
+    background-size: 100% 100%;
+    margin-top: 2px;
+    position: absolute;
+    overflow: hidden;
+}
+.containerr .productDes{
+    display: block;
+    width: 300px;
+    min-height: 300px;
+    padding: 12px;
+    top: 66%;
+    left: 51.5%;
+}
+
+#container-ipBullet{
+ min-height: 118vh !important;
+}
+#ipBullet-special{
+    top: 69%;
+}
+#container-ipDome{
+ min-height: 120vh !important;
+}
+#ipDome-special{
+    top: 68%;
+}
+
+
+#container-hdBullet{
+ min-height: 105vh !important;
+}
+#hdBullet-special{
+    top: 70%;
+}
+#container-hdDome{
+ min-height: 116vh !important;
+}
+#hdDome-special{
+    top: 70%;
+}
+
+#container-xvr{
+ min-height: 130vh !important;
+}
+#xvr-special{
+    top: 68%;
+}
+
+#container-nvr{
+ min-height: 132vh !important;
+}
+#nvr-special{
+    top: 67%;
+}
+
+}
