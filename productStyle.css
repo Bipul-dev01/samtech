@@ -475,7 +475,7 @@
     padding: 12px;
     /* top: 71%; */
     top: 67%;
-    left: 50%;
+    left: 51%;
     transform: translate(-50%, -50%);
     border: 2px solid #13b963;
     background-size: 100% 100%;
@@ -657,7 +657,7 @@
 
 }
 @media screen and (max-width: 360px){
-    .containerr div1,div2,div3,divD1,divD2,div6,div7,div8,div9,div10,div11,div12,div13,div14,divD6,divD7,divX1,divX2,divX3,divX4,divX5,divX6,divN1,divN2,divN3{
+    /* .containerr div1,div2,div3,divD1,divD2,div6,div7,div8,div9,div10,div11,div12,div13,div14,divD6,divD7,divX1,divX2,divX3,divX4,divX5,divX6,divN1,divN2,divN3{
     width: 300px;
     height: 300px;
     border: 1px solid #000;
@@ -714,6 +714,6 @@
 }
 #nvr-special{
     top: 67%;
-}
+} */
 
 }
