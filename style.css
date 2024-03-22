@@ -266,7 +266,7 @@ header ul li ul li ul{
     Slide/Carousel Section Styling
 ********************************************************** */
 .mySlides {
-    display: none
+    display: none;
 }
 .mySlides img {
     vertical-align: middle;
@@ -338,15 +338,19 @@ header ul li ul li ul{
   display: inline-block;
   transition: background-color 0.3s ease;
 }
-.active1, .dot:hover {
+
+/* .dot.active1:hover {
   background-color: rgb(20, 17, 190);
+} */
+.dot.active {
+    background-color:rgb(20, 17, 190) ;
 }
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 3.5s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 2.5s;
 }
 
 @-webkit-keyframes fade {
