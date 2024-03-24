@@ -4,24 +4,24 @@
 // IP Bullet CCTV 1
 //*******************************************************
 
-var lens1=document.getElementById('lens1');
-var first1=document.getElementById('first1');
-var second1=document.getElementById('second1');
+// var lens1=document.getElementById('lens1');
+// var first1=document.getElementById('first1');
+// var second1=document.getElementById('second1');
 
-first1.addEventListener('mousemove', function(e){
+// first1.addEventListener('mousemove', function(e){
 
-    var x = e.clientX - e.target.offsetLeft;
-    var y = e.clientY - e.target.offsetTop;
+//     var x = e.clientX - e.target.offsetLeft;
+//     var y = e.clientY - e.target.offsetTop;
 
-    lens1.style.display = "block";
-    lens1.style.left = x + 'px';
-    lens1.style.top = y +250+ 'px';
+//     lens1.style.display = "block";
+//     lens1.style.left = x + 'px';
+//     lens1.style.top = y +250+ 'px';
 
-    second1.style.backgroundPosition = (x - (850/2/6))* -6 + 'px ' + (y - (850/2/6))* -6 + 'px';
-})
-first1.addEventListener('mouseout', function(){
-    lens1.style.display = "none";
-})
+//     second1.style.backgroundPosition = (x - (850/2/6))* -6 + 'px ' + (y - (850/2/6))* -6 + 'px';
+// })
+// first1.addEventListener('mouseout', function(){
+//     lens1.style.display = "none";
+// })
 
 // IP Bullet CCTV 2
 //*******************************************************

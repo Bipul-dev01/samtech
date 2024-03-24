@@ -98,16 +98,20 @@
         <!-- <i class="fas fa-phone"></i> -->
         <!-- <i class="fas fa-phone-alt"></i> -->
 </div>
+
+
 <!-- Product Description -->
 
 <!-- IP Camera 1 Description -->
-
-    <div class="containerr" id="container-ipBullet">
-         <div1 id="first1">
+ <div class="containerr">
+    <div class="left">
+        <div1 class="div1" id="first1">
             <span id="lens1"></span>
         </div1>
-        <div1 id="second1"></div1>
-        <divProduct class="productDes" id="ipBullet-special">
+        <div1 class="div1" id="second1"></div1>     
+    </div>
+    <div class="right">
+         <divProduct class="productDes">
             <div class="companyBrand">
                 <img src="images/smtech-crop.png">
                 <h1>IP Bullet</h1>      
@@ -119,7 +123,7 @@
                   5 MP Full Color, Outdoor, Audio cctv
             </h2>
             <p>
-                <!-- <h5>Feature :</h5> -->
+               
                 Feature :<br>
                 ●  &nbsp;Image Sensor : 1/2.8" SONY color CMOS<br>
                 ●  &nbsp;Lens : 3.6mm lens<br>
@@ -138,25 +142,30 @@
                 <a class="cart"  href="contact.html">Contact Now</a>
             </div>
         </divProduct>
-    </div>
+    </div>      
+</div>
 
-    <!-- Line1 line2 Gradient color    -->
+<!-- Line1 line2 Gradient color    -->
         <div class="hrLine1">
             <div class="leftLine"></div>
             <div class="rightLine"></div>
-        </div>
-<!-- IP Camera 2 Description -->
+        </div> 
 
-<div class="containerr" id="container-ipBullet">
-    <div2 id="first2">
-        <span id="lens2"></span>
-    </div2>
-    <div2 id="second2"></div2> 
-    <divProduct class="productDes" id="ipBullet-special">
+<!-- IP Camera 2 Description -->
+ <div class="containerr">
+     <div class="left">
+        <div2 class="div2" id="first2">
+            <span id="lens2"></span>
+        </div2>
+        <div2 class="div2" id="second2"></div2>     
+    </div>
+    <div class="right">
+         <divProduct class="productDes">
             <div class="companyBrand">
-                <img src="images/smtech-crop.png">  
-                 <h1>IP Bullet</h1>    
+                <img src="images/smtech-crop.png">
+                <h1>IP Bullet</h1>      
             </div>
+            
             <h2>
                 Model : RH-215<br>
                   Country of Origin : Korea<br>
@@ -173,21 +182,23 @@
                 ●  &nbsp;Weather Proof Ratings : IP67<br>
                 ●  &nbsp;Video Frame Rate : 30fps<br>
                 ●  &nbsp;Max.Video Resolution : 5MP(2880*1620)@20fps<br>
-                ●  &nbsp;Networking Protocol : TCP/IP, HTTP,RTSP,DHCP,NTP,UPNP<br>
-                
+                ●  &nbsp;Networking Protocol : TCP/IP, HTTP,RTSP,DHCP,NTP,UPNP<br>    
             </p>
             <div class="buyCart">
                 <a class="buy" href="about.html">About Us</a>
                 <a class="cart"  href="contact.html">Contact Now</a>
             </div>
         </divProduct>
-</div> 
+    </div>      
+</div>
 
 <!-- Line1 line2 Gradient color    -->
-        <div class="hrLine1">
+     <div class="hrLine1">
             <div class="leftLine"></div>
             <div class="rightLine"></div>
-        </div>
+     </div> 
+
+
 <!-- IP Camera 3 Description -->
 
 <!-- <div class="containerr">
@@ -305,7 +316,28 @@
             header.classList.toggle('active');
         }
     </script>
-    
+
+<!-- Testing -->
+<script>
+    var lens1=document.getElementById('lens1');
+var first1=document.getElementById('first1');
+var second1=document.getElementById('second1');
+
+first1.addEventListener('mousemove', function(e){
+
+    var x = e.clientX - e.target.offsetLeft;
+    var y = e.clientY - e.target.offsetTop;
+
+    lens1.style.display = "block";
+    lens1.style.left = x + 'px';
+    lens1.style.top = y +250+ 'px';
+
+    second1.style.backgroundPosition = (x - (850/2/6))* -6 + 'px ' + (y - (850/2/6))* -6 + 'px';
+})
+first1.addEventListener('mouseout', function(){
+    lens1.style.display = "none";
+})
+</script>    
 <!-- JavaScript for Scroll up Button -->
 <script>       
 //Get the button

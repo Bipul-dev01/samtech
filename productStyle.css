@@ -6,7 +6,6 @@
     box-sizing: border-box;
 }
 
-
 /* Hotline call */
 .pulse{
     height: 60px;
@@ -59,32 +58,56 @@
     }
 }
 
-/* Common Code */
 .containerr{
     width: 100vw;
-    height: 98vh;
+    min-height: 98vh;
     position: relative;
-    background: linear-gradient(to right, #8bd2ac, #a8f5c9);   
+    padding: 25px;
+    background: linear-gradient(to right, #8bd2ac, #a8f5c9);  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
 }
-.containerr div1,div2,div3,divD1,divD2,div6,div7,div8,div9,div10,div11,div12,div13,div14,divD6,divD7,divX1,divX2,divX3,divX4,divX5,divX6,divN1,divN2,divN3{
+.containerr .left{
+    width: 50%;
+    min-height: 500px;
+    position: relative;
+    /* background: red; */
+    display: flex;
+    justify-content: right;
+    align-items: center;    
+}
+.containerr .left .div1,.div2,.divD1,.div6,.div7,.div8,.div9,.div10,.div11,.div12,.div13,.divD6,.divD7,.divX1,.divX2,.divX3,.divX4,.divX5,.divX6,.divN1,.divN2,.divN3{
+    /* width: 37vw;
+    height: 79vh; */
     width: 500px;
-    height: 500px;
+    /* height: 500px; */
+    height: 100%;
+    background: #43a5f6;
     border: 1px solid #000;
-    background-size: 100% 100%;
     position: absolute;
+    background-size: 100% 100%; 
     overflow: hidden;
     box-shadow: -1px 6px 20px 5px rgba(23,21,21,0.74);
     -webkit-box-shadow: -1px 6px 20px 5px rgba(23,21,21,0.74);
     -moz-box-shadow: -1px 6px 20px 5px rgba(23,21,21,0.74);
-    border-radius: 15px;
+    border-radius: 15px; 
 }
-.containerr divProduct{
-    width: 500px;
+.containerr .right{
+    width: 50%;
+    position: relative;
+    /* background: white; */
+    min-height: 500px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.containerr .right .productDes{
+    /* width: 500px; */
     min-height: 500px;
     padding: 25px;
-    top: 50%;
-    left: 70%;
-    transform: translate(-50%, -50%);
+    padding-left: 50px;
     border: 3px solid #13b963;
     background-size: 100% 100%;
     position: absolute;
@@ -94,6 +117,30 @@
     -moz-box-shadow: -1px 6px 15px 5px rgba(23,21,21,0.74);
     border-radius: 15px;
 }
+#first1,#first2,#firstD1,#first6,#first7,#first8,#first9,#first10,#first11,#first12,#first13,#firstD6,#firstD7,#firstX1,#firstX2,#firstX3,#firstX4,#firstX5,#firstX6,#firstN1,#firstN2,#firstN3{
+    top: 50%;
+    left: 23%; 
+    transform: translateY(-50%);
+    border: none;
+}
+#lens1,#lens2,#lensD1,#lens6,#lens7,#lens8,#lens9,#lens10,#lens11,#lens12,#lens13,#lensD6,#lensD7,#lensX1,#lensX2,#lensX3,#lensX4,#lensX5,#lensX6,#lensN1,#lensN2,#lensN3{
+    width: 150px;
+    height: 150px;
+    background: rgba(0,0,0,0.4);
+    position: relative;
+    border: 3px solid #00b050;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    display: none;
+}
+#second1,#second2,#secondD1,#second6,#second7,#second8,#second9,#second10,#second11,#second12,#second13,#secondD6,#secondD7,#secondX1,#secondX2,#secondX3,#secondX4,#secondX5,#secondX6,#secondN1,#secondN2,#secondN3{
+    background-size: 200% 200%;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    display: none;
+} 
 .productDes .companyBrand{
     display: flex;
     flex-direction: row;
@@ -104,30 +151,6 @@
     margin-top: -30px;
     margin-left: 10px;
 }
-#first1,#first2,#first3,#firstD1,#firstD2,#firstD6,#firstD7,#first6,#first7,#first8,#first9,#first10,#first11,#first12,#first13,#first14,#firstX1,#firstX2,#firstX3,#firstX4,#firstX5,#firstX6,#firstN1,#firstN2,#firstN3{
-    top: 50%;
-    left: 15%;
-    transform: translateY(-50%);
-    border: none;
-}
-#second1,#second2,#second3,#secondD1,#secondD2,#second6,#second7,#second8,#second9,#second10,#second11,#second12,#second13,#second14,#secondD6,#secondD7,#secondX1,#secondX2,#secondX3,#secondX4,#secondX5,#secondX6,#secondN1,#secondN2,#secondN3{
-    background-size: 200% 200%;
-    top: 50%;
-    left: 52%;
-    transform: translateY(-50%);
-    z-index: 1000;
-    display: none;
-}
-#lens1,#lens2,#lens3,#lensD1,#lensD2,#lens6,#lens7,#lens8,#lens9,#lens10,#lens11,#lens12,#lens13,#lens14,#lensD6,#lensD7,#lensX1,#lensX2,#lensX3,#lensX4,#lensX5,#lensX6,#lensN1,#lensN2,#lensN3{
-    width: 150px;
-    height: 150px;
-    background: rgba(0,0,0,0.4);
-    position: absolute;
-    border: 3px solid #00b050;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    display: none;
-} 
 .productDes h1{
     margin: 0px 0 0px 0;
     margin-top: -2px;
@@ -136,8 +159,7 @@
     font-size: 22px;
     font-weight: 600;
     text-shadow: 1px 2px #fff;
-    font-family: 'Poppins', sans-serif;
-    
+    font-family: 'Poppins', sans-serif;  
 }
 .productDes h2{
     font-size: 16px;
@@ -196,16 +218,16 @@
 /* ********************************************
             IP Bullet CCTV 
 ******************************************** */
+
 /* IP Camera 1 */
-.containerr div1{
+.containerr .left .div1{
     background-image: url("productImage/IPBulletCCTV/RH-233-F.png");
 }
 #first1:hover+ #second1{
     display: block;
 }
-
 /* IP Camera 2 */
-.containerr div2{
+.containerr .left .div2{
     background-image: url("productImage/IPBulletCCTV/AL-RH215.png");
 }
 #first2:hover+ #second2{
@@ -213,7 +235,7 @@
 }
 
 /* IP Camera 3 */
-.containerr div3{
+.containerr .left .div3{
     background-image: url("productImage/IPBulletCCTV/03-B-CCTV.png");
 }
 #first3:hover+ #second3{
@@ -224,14 +246,14 @@
             IP Dome CCTV 
 ******************************************** */
 /* Ip Dome 1 */
-.containerr divD1{
+.containerr .left .divD1{
     background-image: url("productImage/IPDomeCCTV/Al-RH230FullColor.png");
 }
 #firstD1:hover+ #secondD1{
     display: block;
 }
 /* Ip Dome 2 */
-.containerr divD2{
+.containerr .left .divD2{
     background-image: url("productImage/IPDomeCCTv/AL-RH204\(night\ Vision\).png");
 }
 #firstD2:hover+ #secondD2{
@@ -242,7 +264,7 @@
             HD Bullet CCTV 
 ******************************************** */
 /* HD Camera 1 */
-.containerr div6{
+.containerr .left .div6{
     background-image: url("productImage/HDBulletCCTV/RH-201-F.png");
 }
 #first6:hover+ #second6{
@@ -250,7 +272,7 @@
 } 
 
 /* HD Camera 2 */
-.containerr div7{
+.containerr .left .div7{
     background-image: url("productImage/HDBulletCCTV/RH-220-F.png");
 }
 #first7:hover+ #second7{
@@ -258,7 +280,7 @@
 }
 
 /* HD Camera 3 */
-.containerr div8{
+.containerr .left .div8{
     background-image: url("productImage/HDBulletCCTV/AL-RH210.png");
 }
 #first8:hover+ #second8{
@@ -266,42 +288,42 @@
 }
 
 /* HD Camera 4 */
-.containerr div9{
+.containerr .left .div9{
     background-image: url("productImage/HDBulletCCTV/RH-201-F.png");
 }
 #first9:hover+ #second9{
     display: block;
 }
 /* HD Camera 5 */
-.containerr div10{
+.containerr .left .div10{
     background-image: url("productImage/HDBulletCCTV/RH-220-F.png");
 }
 #first10:hover+ #second10{
     display: block;
 }
 /* HD Camera 6 */
-.containerr div11{
+.containerr .left .div11{
     background-image: url("productImage/HDBulletCCTV/RH-211-F.png");
 }
 #first11:hover+ #second11{
     display: block;
 }
 /* HD Camera 7 */
-.containerr div12{
+.containerr .left .div12{
     background-image: url("productImage/HDBulletCCTV/RH-205-F.png");
 }
 #first12:hover+ #second12{
     display: block;
 }
 /* HD Camera 8 */
-.containerr div13{
+.containerr .left .div13{
     background-image: url("productImage/HDBulletCCTV/RH-208-F.png");
 }
 #first13:hover+ #second13{
     display: block;
 }
 /* HD Camera 9 */
-.containerr div14{
+.containerr .left .div14{
     background-image: url("productImage/HDBulletCCTV/AL-RH210.png");
 }
 #first14:hover+ #second14{
@@ -312,7 +334,7 @@
             HD Dome CCTV 
 ******************************************** */
 /* HD Dome Camera 1 */
-.containerr divD6{
+.containerr .left .divD6{
     background-image: url("productImage/HDDomeCCTV/AL-RH230.png");
 }
 #firstD6:hover+ #secondD6{
@@ -320,18 +342,17 @@
 } 
 
 /* HD Dome Camera 2 */
-.containerr divD7{
+.containerr .left .divD7{
     background-image: url("productImage/HDDomeCCTV/AL-RH204\(night\ Vision\).png");
 }
 #firstD7:hover+ #secondD7{
     display: block;
 } 
-
 /* ********************************************
             XVR
 ******************************************** */
 /* XVR 1 */
-.containerr divX1{
+.containerr .left .divX1{
     background-image: url("productImage/XVR/XVR-4-Ch.png");
 }
 #firstX1:hover+ #secondX1{
@@ -339,7 +360,7 @@
 } 
 
 /* XVR 2 */
-.containerr divX2{
+.containerr .left .divX2{
     background-image: url("productImage/XVR/XVR-8Ch.png");
 }
 #firstX2:hover+ #secondX2{
@@ -347,7 +368,7 @@
 } 
 
 /* XVR 3 */
-.containerr divX3{
+.containerr .left .divX3{
     background-image: url("productImage/XVR/XVR-8Ch.png");
 }
 #firstX3:hover+ #secondX3{
@@ -355,7 +376,7 @@
 } 
 
 /* XVR 4 */
-.containerr divX4{
+.containerr .left .divX4{
     background-image: url("productImage/XVR/XVR-8Ch.png");
 }
 #firstX4:hover+ #secondX4{
@@ -363,7 +384,7 @@
 } 
 
 /* XVR 5 */
-.containerr divX5{
+.containerr .left .divX5{
     background-image: url("productImage/XVR/XVR-8Ch.png");
 }
 #firstX5:hover+ #secondX5{
@@ -371,56 +392,48 @@
 } 
 
 /* XVR 6 */
-.containerr divX6{
+.containerr .left .divX6{
     background-image: url("productImage/XVR/XVR-8Ch.png");
 }
 #firstX6:hover+ #secondX6{
     display: block;
 } 
-
-
-
 /* ********************************************
             NVR
 ******************************************** */
 /* NVR 1 */
-.containerr divN1{
+.containerr .left .divN1{
     background-image: url("productImage/NVR/nvr.png");
 }
 #firstN1:hover+ #secondN1{
     display: block;
 } 
-
 /* NVR 2 */
-.containerr divN2{
+.containerr .left .divN2{
     background-image: url("productImage/NVR/nvr.png");
 }
 #firstN2:hover+ #secondN2{
     display: block;
 } 
-
 /* NVR 3 */
-.containerr divN3{
+.containerr .left .divN3{
     background-image: url("productImage/NVR/nvr.png");
 }
 #firstN3:hover+ #secondN3{
     display: block;
-} 
-
-
+}
 
 /* ******************************************************
     Line1 Line2 Gradient Styling 
 ****************************************************** */
-
 .hrLine1{
     width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;  
-  
+    align-items: center;
+    background-color: #a8f5c9;
 }
 .leftLine{
     width: 50%;
@@ -436,284 +449,209 @@
     /* margin-left: 15px; */
 }
 
+
+@media screen and (max-width: 767px){
+    /* Hotline call */
+    .pulse{
+        height: 50px;
+        width: 50px;
+        left: 7%;
+        font-size: 18px;
+        z-index: 99;
+    }
+    .containerr{
+         display: flex;
+         flex-direction: column;
+         background: #a8f5c9;
+         padding-top: 0;
+         padding-bottom: 15px;
+    }
+    .containerr .left{
+        width: 100%;
+        /* min-height: 300px; */
+        height: 75%;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        margin-top: -20px;
+    }
+    .containerr .left .div1,.div2,.divD1,.div6,.div7,.div8,.div9,.div10,.div11,.div12,.div13,.divD6,.divD7,.divX1,.divX2,.divX3,.divX4,.divX5,.divX6,.divN1,.divN2,.divN3{
+        /* width: 320px;
+        height: 320px; */
+        width: 100%;
+        height: 65%;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+   } 
+    .containerr .right{
+        width: 100%;
+        min-height: 500px;
+        justify-content: center;
+        align-items: center;      
+   }
+   .containerr .right .productDes{
+        padding: 25px;
+        padding-left: 25px;
+        margin-top: -60px;
+        border: 2.5px solid #13b963;
+    }
+    #first1,#first2,#firstD1,#first6,#first7,#first8,#first9,#first10,#first11,#first12,#first13,#firstD6,#firstD7,#firstX1,#firstX2,#firstX3,#firstX4,#firstX5,#firstX6,#firstN1,#firstN2,#firstN3{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border: none;
+    }
+    #second1,#second2,#second3,#secondD1,#secondD2,#second6,#second7,#second8,#second9,#second10,#second11,#second12,#second13,#second14,#secondD6,#secondD7,#secondX1,#secondX2,#secondX3,#secondX4,#secondX5,#secondX6,#secondN1,#secondN2,#secondN3{
+        display: none !important;
+    }
+    #lens1,#lens2,#lens3,#lensD1,#lensD2,#lens6,#lens7,#lens8,#lens9,#lens10,#lens11,#lens12,#lens13,#lens14,#lensD6,#lensD7,#lensX1,#lensX2,#lensX3,#lensX4,#lensX5,#lensX6,#lensN1,#lensN2,#lensN3{
+        display: none !important;
+    } 
+    .productDes .companyBrand{
+        display: flex;
+        flex-direction: row;
+    }
+    .productDes .companyBrand img{
+        width: 165px;
+        height: 35px;
+        margin-top: -15px;
+        margin-right: 3px;
+        left: 0;
+    }
+    .buyCart{
+        padding-bottom: 4px;
+    }
+    .productDes .companyBrand h1{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        margin-left: -180px;  
+    }
+    .productDes h2{
+        font-size: 15px;
+        margin: 3px 0 10px 0;
+        font-weight: 300;
+    }
+    .productDes p{
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 10px;
+    }
+    .productDes div a{
+        font-size: 15px;
+        padding: 8px 15px;
+        margin-top: 13px;
+    }
+    .hrLine1{
+        padding-top: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;  
+    }
+
+    /* Individual Code */
+
+    /* IP Bullet Camera */
+
+    #first1:hover+ #second1{
+        display: none;
+    }
+    #first2:hover+ #second2{
+        display: none;
+    }
+    #first3:hover+ #second3{
+        display: none;
+    }
+
+    /* IP Dome Camera 1 */
+    #firstD1:hover+ #secondD1{
+        display: none;
+    }
+    /* IP Dome Camera 2 */
+    #firstD2:hover+ #secondD2{
+        display: none;
+    }
+
+    /* HD Bullet Camera */
+    #first6:hover+ #second6{
+        display: none;
+    }
+    #first7:hover+ #second7{
+        display: none;
+    }
+    #first8:hover+ #second8{
+        display: none;
+    }
+    #first9:hover+ #second9{
+        display: none;
+    }
+    #first10:hover+ #second10{
+        display: none;
+    }
+    #first11:hover+ #second11{
+        display: none;
+    }
+    #first12:hover+ #second12{
+        display: none;
+    }
+    #first13:hover+ #second13{
+        display: none;
+    }
+    #first14:hover+ #second14{
+        display: none;
+    }
+
+
+    /* HD Dome Camera */
+    #firstD6:hover+ #secondD6{
+        display: none;
+    }
+    #firstD7:hover+ #secondD7{
+        display: none;
+    }
+
+    /* XVR */
+    #firstX1:hover+ #secondX1{
+        display: none;
+    }
+    #firstX2:hover+ #secondX2{
+        display: none;
+    }
+    #firstX3:hover+ #secondX3{
+        display: none;
+    }
+    #firstX4:hover+ #secondX4{
+        display: none;
+    }
+    #firstX5:hover+ #secondX5{
+        display: none;
+    }
+    #firstX6:hover+ #secondX6{
+        display: none;
+    }
+
+    /* NVR */
+    #firstN1:hover+ #secondN1{
+        display: none;
+    }
+    #firstN2:hover+ #secondN2{
+        display: none;
+    }
+    #firstN3:hover+ #secondN3{
+        display: none;
+    }
+ 
+}
+
+
+
+
+
+
+
 @media screen and (max-width: 480px){
 
-/* Hotline call */
-.pulse{
-    height: 50px;
-    width: 50px;
-    left: 7%;
-    font-size: 18px;
-    z-index: 99;
-}
-   /* Common Code */
-.containerr{
-    width: 100%;
-    /* height: 150vh; */
-    min-height: 140vh;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;  
-}
-
-.containerr div1,div2,div3,divD1,divD2,div6,div7,div8,div9,div10,div11,div12,div13,div14,divD6,divD7,divX1,divX2,divX3,divX4,divX5,divX6,divN1,divN2,divN3{
-    width: 300px;
-    height: 300px;
-    border: 1px solid #000;
-    background-size: 100% 100%;
-    margin-top: 2px;
-    position: absolute;
-    overflow: hidden;
-}
-.containerr .productDes{
-    display: block;
-    width: 300px;
-    /* min-height: 585px; */
-    min-height: 300px;
-    /* margin-top: -10px; */
-    padding: 12px;
-    /* top: 71%; */
-    top: 67%;
-    left: 51%;
-    transform: translate(-50%, -50%);
-    border: 2px solid #13b963;
-    background-size: 100% 100%;
-    position: absolute;
-    overflow: hidden;
-}
-#container-hdBullet{
- min-height: 120vh !important;
-}
-#hdBullet-special{
-    top: 70%;
-}
-
-#container-xvr{
- min-height: 144vh !important;
-}
-#xvr-special{
-    top: 68%;
-}
-
-#container-nvr{
- min-height: 145vh !important;
-}
-#nvr-special{
-    top: 68%;
-}
-
-.productDes .companyBrand{
-    display: flex;
-    flex-direction: row;
-}
-.productDes .companyBrand img{
-    width: 165px;
-    height: 35px;
-    margin-top: -15px;
-    margin-right: 3px;
-    left: 0;
-}
-#first1,#first2,#first3,#firstD1,#firstD2,#first6,#first7,#first8,#first9,#first10,#first11,#first12,#first13,#first14,#firstD6,#firstD7,#firstX1,#firstX2,#firstX3,#firstX4,#firstX5,#firstX6,#firstN1,#firstN2,#firstN3{
-    top: 13%;
-    left: 10%;
-    transform: translateY(-25%);
-    border: none;
-}
-#second1,#second2,#second3,#secondD1,#secondD2,#second6,#second7,#second8,#second9,#second10,#second11,#second12,#second13,#second14,#secondD6,#secondD7,#secondX1,#secondX2,#secondX3,#secondX4,#secondX5,#secondX6,#secondN1,#secondN2,#secondN3{
-    display: none;
-}
-#lens1,#lens2,#lens3,#lensD1,#lensD2,#lens6,#lens7,#lens8,#lens9,#lens10,#lens11,#lens12,#lens13,#lens14,#lensD6,#lensD7,#lensX1,#lensX2,#lensX3,#lensX4,#lensX5,#lensX6,#lensN1,#lensN2,#lensN3{
-    display: none;
-} 
-.buyCart{
-    padding-bottom: 4px;
-}
-.productDes .companyBrand h1{
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 20px;
-    margin-left: -180px;  
-}
-.productDes h2{
-    font-size: 15px;
-    margin: 3px 0 10px 0;
-    font-weight: 300;
-}
-.productDes p{
-    font-size: 14px;
-    line-height: 18px;
-    margin-bottom: 10px;
-}
-/* .productDes div{
-    margin-top: 10px;
-} */
-.productDes div a{
-    font-size: 15px;
-    padding: 8px 15px;
-    margin-top: 13px;
-}
-.hrLine1{
-    padding-top: 40px;
-    /* padding-bottom: -120px; */
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;  
-    background: linear-gradient(to right, #55c88b, #2e8b57);
-}
-
-/* Individual Code */
-
-/* IP Bullet Camera */
-#first1:hover+ #second1{
-    display: none;
-}
-#first2:hover+ #second2{
-    display: none;
-}
-#first3:hover+ #second3{
-    display: none;
-}
-
-/* IP Dome Camera 1 */
-
-#firstD1:hover+ #secondD1{
-    display: none;
-}
-/* IP Dome Camera 2 */
-
-#firstD2:hover+ #secondD2{
-    display: none;
-}
-
-/* HD Bullet Camera */
-#first6:hover+ #second6{
-    display: none;
-}
-#first7:hover+ #second7{
-    display: none;
-}
-#first8:hover+ #second8{
-    display: none;
-}
-#first9:hover+ #second9{
-    display: none;
-}
-#first10:hover+ #second10{
-    display: none;
-}
-#first11:hover+ #second11{
-    display: none;
-}
-#first12:hover+ #second12{
-    display: none;
-}
-#first13:hover+ #second13{
-    display: none;
-}
-#first14:hover+ #second14{
-    display: none;
-}
-
-/* HD Dome Camera */
-#firstD6:hover+ #secondD6{
-    display: none;
-}
-#firstD7:hover+ #secondD7{
-    display: none;
-}
-
-/* XVR */
-#firstX1:hover+ #secondX1{
-    display: none;
-}
-#firstX2:hover+ #secondX2{
-    display: none;
-}
-#firstX3:hover+ #secondX3{
-    display: none;
-}
-#firstX4:hover+ #secondX4{
-    display: none;
-}
-#firstX5:hover+ #secondX5{
-    display: none;
-}
-#firstX6:hover+ #secondX6{
-    display: none;
-}
-
-/* NVR */
-#firstN1:hover+ #secondN1{
-    display: none;
-}
-#firstN2:hover+ #secondN2{
-    display: none;
-}
-#firstN3:hover+ #secondN3{
-    display: none;
-}
-
-}
-@media screen and (max-width: 360px){
-    /* .containerr div1,div2,div3,divD1,divD2,div6,div7,div8,div9,div10,div11,div12,div13,div14,divD6,divD7,divX1,divX2,divX3,divX4,divX5,divX6,divN1,divN2,divN3{
-    width: 300px;
-    height: 300px;
-    border: 1px solid #000;
-    background-size: 100% 100%;
-    margin-top: 2px;
-    position: absolute;
-    overflow: hidden;
-}
-.containerr .productDes{
-    display: block;
-    width: 300px;
-    min-height: 300px;
-    padding: 12px;
-    top: 66%;
-    left: 51.5%;
-}
-
-#container-ipBullet{
- min-height: 118vh !important;
-}
-#ipBullet-special{
-    top: 69%;
-}
-#container-ipDome{
- min-height: 120vh !important;
-}
-#ipDome-special{
-    top: 68%;
-}
-
-
-#container-hdBullet{
- min-height: 105vh !important;
-}
-#hdBullet-special{
-    top: 70%;
-}
-#container-hdDome{
- min-height: 116vh !important;
-}
-#hdDome-special{
-    top: 70%;
-}
-
-#container-xvr{
- min-height: 130vh !important;
-}
-#xvr-special{
-    top: 68%;
-}
-
-#container-nvr{
- min-height: 132vh !important;
-}
-#nvr-special{
-    top: 67%;
-} */
 
 }
