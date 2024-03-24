@@ -105,6 +105,7 @@
 }
 .containerr .right .productDes{
     /* width: 500px; */
+    /* min-width: 78%; */
     min-height: 500px;
     padding: 25px;
     padding-left: 50px;
@@ -491,6 +492,8 @@
         align-items: center;      
    }
    .containerr .right .productDes{
+        min-height: 400px;
+        width: 100%;
         padding: 25px;
         padding-left: 25px;
         margin-top: -60px;
@@ -644,12 +647,6 @@
     }
  
 }
-
-
-
-
-
-
 
 @media screen and (max-width: 480px){
 
