@@ -102,6 +102,31 @@
         </nav>
     </header>
 
+
+<!-- Popup Card Start -->
+ <div class="popup">
+        <div class="containerBox">
+            <div class="close">
+
+            </div>
+            <div class="imgBx">
+                <img src="images/popupImage/eid.png">
+            </div>
+            <div class="content">
+                <div>
+                    <h1>Eid Mubarak</h1>
+                    <p>May this auspicious occasion of Eid bring you and your loved ones immense joy, prosperity, and blessings. Wishing you a Eid filled with peace, happiness, and countless blessings!</p>
+                    <h3>Special offer</h3>
+                    <!-- <h2>80<sup>%</sup><span>off</span></h2> -->
+                    
+                    <a href="contact.html">Contact Us</a>
+                </div>        
+            </div>
+        </div>
+    </div>
+<!-- Popup Card End -->
+
+
 <!-- ***************************************************************
     Slide/Carousel section start
 *************************************************************** -->
@@ -896,6 +921,22 @@
       ScrollReveal().reveal('.quickLinks', { delay: 250, origin : 'bottom' });
       ScrollReveal().reveal('.contact', { delay: 250, origin : 'right' });
 </script>
+
+<!-- Automatic show popup after 3s of page load -->
+    <script>
+        var popup = document.querySelector(".popup");
+        var close = document.querySelector(".close");
+
+        window.onload = function(){
+            setTimeout(function(){
+                popup.style.display = "block";
+            },1000);
+        };
+
+        close.addEventListener('click', () => {
+            popup.style.display = "none";
+        })
+    </script>
 
 
 <!-- <script src="index.js"></scrip> -->

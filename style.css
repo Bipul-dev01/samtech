@@ -8,7 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Galada&family=Orbitron:wght@500&family=Poppins:ital,wght@1,100&family=Vollkorn:ital@1&display=swap");
 
 *{
     margin: 0;
@@ -19,6 +19,120 @@
 html{
   scroll-behavior: smooth;
 }
+
+
+/* Popup card Style Start */
+.popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    z-index: 999999999999999999999999999999;
+}
+
+.containerBox{
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background: #fff;
+    border-radius: 20px;
+    display: flex;
+    border: 2px solid #ccc;
+    box-shadow: 15px 5px 15px rgba(0,0,0,0.1);
+}
+.containerBox:hover{
+  box-shadow: 5px 5px 5px 1px #4aa6db;
+  transition: all 0.4s ease;
+}
+.containerBox:hover .close{
+   border: 2px solid #ccc;
+   transition: all 0.4s ease;
+}
+.containerBox .imgBx{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerBox .imgBx::before{
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: #e7ffe0;
+    border-radius: 50%;
+}
+.containerBox .imgBx img{
+    position: relative;
+    max-width: 250px;
+    z-index: 1;
+}
+.containerBox .content{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerBox h1{
+  color: rgb(228, 165, 5);
+  font-size: 40px;
+  /* font-family: "Pacifico", cursive; */
+  font-family: 'Galada', cursive;
+  font-weight: lighter;
+  /* text-shadow:2px 2px #80817f; */
+}
+.containerBox h3{
+    color: #ff4d54; ;
+    line-height: 1em;
+    font-weight: 400;
+    font-size: 1.2em;
+    padding-top: 10px;
+    padding-bottom: 7px;
+}
+.containerBox h2{
+    color: #ff4d54 ;
+    line-height: 1em;
+    font-size: 4em;
+}
+.containerBox .content p{
+    font-weight: 300;
+    padding-top: 2px;
+    font-size: 15px;
+    padding-right: 25px;
+    text-align: justify;
+}
+.containerBox .content a{
+    display: inline-block;
+    padding: 8px 17px;
+    /* background: #ff4d54; */
+    background: #43a5f6;
+    color: #fff;
+    margin-top: 15px;
+    text-decoration: none;
+    border-radius: 10px;   
+}
+.close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: #f3f3f3 url(images/popupImage/close.png);
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 99999999999;
+}
+/* Popup card Style End */
+
+
 /* Preloader */
 #loading{
     height: 100%;
@@ -543,6 +657,7 @@ header ul li ul li ul{
     /* padding: 10px; */
     padding-bottom: 10px;
     transition: transform 1s;
+    /* filter: drop-shadow(10px 10px 20px black); */
   }
   .slide a{
     text-decoration: none;
@@ -1621,20 +1736,23 @@ footer p {
     } */
     header ul li ul li{
       position: relative;
+      /* width: 100%; */
       width: 100%;
       border: 1.5px solid rgba(0,0,0,0.2);
     }
      header ul li ul li ul li{
       position: relative;
       width: 115%;
+      /* width: 100%; */
       margin-left: -18px;
-      border: 1px solid #fff;
+      /* border: 1px solid #fff; */
       margin-bottom: 3px;
     }
   
     header ul li ul li ul{
         top: 0;
         left: 0;
+        background: #36637b;
     }
     header nav ul li:hover ul li{
         background: #546e7b;
@@ -1738,6 +1856,48 @@ footer p {
 }
 
 @media (max-width: 767px){
+/* Popup Card Start */
+.containerBox{
+        margin-top: 50px;
+        width: 300px;
+        height: auto;
+        flex-direction: column;
+        border: 2px solid #fff;
+    }
+    .containerBox .imgBx{
+        height: 200px;
+        transform: translateY(-50px);
+    }
+    .containerBox .imgBx::before{
+        background: #fff;
+    }
+    .containerBox .content{
+        height: auto;
+        text-align: center;
+        padding: 20px;
+        padding-top: 0;
+    }
+    .containerBox .content h1{
+      margin-top: -30px;
+    }
+    .containerBox .content h3{
+      font-size: 25px;
+    }
+    .containerBox .content p{
+      padding-top: 1px;
+      padding-right: 5px;
+      text-align: center;
+    }
+    .close{
+        top: -50px;
+        right: -10px;
+        background: #f3f3f3 url(images/popupImage/close.png);
+        background-repeat: no-repeat;
+        background-size: 10px;
+        background-position: center;
+        z-index: 9999999}
+/* Popup Card End */
+
 /* Footer section for All pages */
       footer {
           padding: 10px 1%; 
